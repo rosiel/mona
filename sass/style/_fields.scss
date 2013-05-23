@@ -1,0 +1,9 @@
+/* Themed Fields */
+
+.form-select,
+.form-textarea,
+.form-text,
+.password,
+.email {
+  @include aether-form("standard");
+}

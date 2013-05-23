@@ -1,0 +1,32 @@
+/*
+ * ==================================================
+ * Images
+ * ==================================================
+ */
+
+// Responsive images
+
+img {
+  max-width: 100%;
+  height: auto;
+  // Improve IE's resizing of images: css-tricks.com/ie-fix-bicubic-scaling-for-images
+  .ie6-7 & {
+    -ms-interpolation-mode: bicubic;
+  }
+  .ie8 & {
+    width: auto;
+  }
+}
+
+/* Override max-width 100% for map displays */
+.gmap, .view-gmap, .openlayers-map, #getlocations_map_canvas {
+  img {
+    max-width: none;
+  }
+}
+
+// Images in figure elements.
+
+figure > img{
+    display:block;
+}

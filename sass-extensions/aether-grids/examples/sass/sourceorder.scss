@@ -1,0 +1,39 @@
+@import 'base';
+
+$aether-grid-type: fluid;
+$aether-columns: 12;
+$aether-grid-width: 1148px;
+$aether-include-grid-item-base: true;
+
+html { 
+  overflow:auto; 
+  overflow-x:hidden;
+}
+
+.main {
+  @include container($break-wide, max);
+}
+
+// Smallest
+.content, .aside1, .aside2 { @include span-columns(12); }
+
+// Small
+@include breakpoint($break-small) {
+  .content { @include span-columns(12); @include position(1);}
+  .aside1 { @include span-columns(6, first); @include position(1); }
+  .aside2 { @include span-columns(6); @include position(7); }
+}
+
+// Medium
+@include breakpoint($break-medium) {
+  .content { @include span-columns(8); @include position(5);}
+  .aside1 { @include span-columns(4); @include position(1); clear: none;}
+  .aside2 { @include span-columns(12, first); @include position(1); }
+}
+
+// Medium
+@include breakpoint($break-large) {
+  .content { @include span-columns(6); @include position(4);}
+  .aside1 { @include span-columns(3); @include position(1); clear: none;}
+  .aside2 { @include span-columns(3, last); @include position(10); }
+}

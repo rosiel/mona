@@ -1,0 +1,114 @@
+/*
+ * Blocks
+ */
+
+//
+// Local mixins are documented here, the rest are Compass mixins.
+// Look here for the Compass mixin docs http://compass-style.org/index/mixins/
+//
+
+.block {
+  @include margin-trailer(1, $base-font-size);
+}
+
+#feature {
+  @include margin-trailer(0.6, $base-font-size);
+}
+
+#content .content-block {
+  @include margin-trailer(1);
+}
+
+#footer .footer-inner {
+  @include margin-leader(1);
+}
+
+$bright: #CCC;
+$dulled: #AAA;
+
+$selected-menu: $bright;
+$unselected-menu: $dulled;
+
+#block-locale-language {
+  //float: left;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  ul {
+    margin: 0.4em;
+    padding: 0;
+    list-style-type: none;
+  }
+  li {
+    display: inline;
+  }
+  li a{
+    color: $unselected-menu;
+  }
+  a.language-link.session-active {
+    color: $selected-menu;
+  }
+
+}
+
+#block-system-user-menu {
+  float: right;
+  margin-bottom: 0;
+  ul {
+    @include horizontal-list-container;
+    margin: 0.4em;
+    list-style-type: none;
+    li {
+      @include horizontal-list-item(1em, left);
+      a {
+        color: $dulled;
+	
+      }
+    }
+  }
+}
+
+#feature #block-islandora_solr-simple{
+  color: black;
+  margin: 1em 0 0 0;
+  form {
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+  }
+  
+  #edit-islandora-simple-search-query {
+    width: 60%;
+  }
+  a {
+    padding-left: 1em;
+  }
+}
+
+#block-custom_solr_config-keyword_facets, #block-custom_solr_config-series_links, #block-custom_solr_config-external_links {
+    background-color: #F5F5F5;
+    h2 {
+        background-color: #ECECEC;
+        margin-top: 8px;
+        margin-bottom: 5px;
+        padding: 5px 0 3px 5px;
+        color: #3E97B5;
+        border-top: solid 1px #3e97b5;
+    }
+    ul {
+        list-style-type: none;
+        li {
+            a {
+                color: black;
+                font-weight: normal;
+            }
+            a:hover {
+                color: #3e97b5;
+            }
+            padding: 5px 10px;;
+            border-bottom: dotted 1px #3e97b5;
+        }
+    }
+
+}

@@ -1,0 +1,6 @@
+<dd class="collection-value title ">
+ <h3>
+  <?php print($partname); ?>
+ </h3>
+</dd>
+

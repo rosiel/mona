@@ -1,0 +1,37 @@
+/*
+ * ==================================================
+ * Buttons
+ * ==================================================
+ */
+
+%btn {
+  @include trailer(1);
+  margin-right: 0.3em; // Adds space between buttons
+  font-family: $button-font-family;
+  @include aether-button-structure($border-radius: 4px, $font-size: $font-size-sm, $padding: 0.64em 1em);
+}
+
+// IE7
+@if $legacy-support-for-ie7 {
+  .ie7 {
+    .form-submit[type="submit"] {
+      padding: 0.54em 0.5em;
+    }
+  }
+}
+
+// Makes browse button more accessable.
+input[type="file"] {
+  height: 28px;
+  line-height: 28px;
+}
+
+// Add space after browse button.
+.form-managed-file {
+  .form-file { margin-right: 0.3em; }
+  .form-submit { @include trailer(0); }
+}
+
+.container-inline .form-submit {
+  @include trailer(0);
+}

@@ -1,0 +1,44 @@
+/*
+ * ==================================================
+ * Progress
+ * ==================================================
+ */
+
+/**
+ * Progress bar.
+ *
+ * @see progress.js
+ */
+
+.progress {
+  font-weight: bold;
+
+  .bar {
+    background: #ccc;
+    border-color: #666;
+    margin: 0 0.2em;
+    @include border-radius(3px);
+  }
+
+  .filled {
+    background-color: #0072b9;
+    background-image: inline-image("progress.gif");
+    @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+      *background-image: url(../images/progress.gif);
+    }
+  }
+}
+
+///**
+// * Progress bar.
+// *
+// * @see progress.js
+// */
+
+//// Add the base meter styles.
+//.progress .bar {
+//  @include aether-meter($bar-selector: '.filled', $meter-color: #0E90D2);
+//}
+
+//// Trigger the animation.
+//@include aether-meter-animate;

@@ -1,0 +1,26 @@
+/*
+ * ==================================================
+ * Unpublished
+ * ==================================================
+ */
+
+// The word "Unpublished" displayed underneath the content.
+p.unpublished {
+  height: 0;
+  overflow: visible;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: $mono-font-family;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word;
+}
+@if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+  .lt-ie8 .node-unpublished>*,
+  .lt-ie8 .comment-unpublished>* {
+    // Otherwise these elements will appear below the "Unpublished" text.
+    position: relative;
+  }
+}

@@ -1,0 +1,19 @@
+/*
+ * ==================================================
+ * Node Styling
+ * ==================================================
+ */
+
+// Node wrapper
+.node {
+  .submitted {
+    @include adjust-font-size-to($font-size-md);
+    color: $text-color-light;
+  }
+}
+
+.node-teaser {
+  .node-title {
+    @include trailer(0.25);
+  }
+}

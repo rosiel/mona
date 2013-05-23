@@ -1,0 +1,45 @@
+/*
+ * ==================================================
+ * Lists
+ * ==================================================
+ */
+
+/* Lists */
+
+menu,
+ol,
+ul,
+.item-list ul /* Drupal override */ {
+  margin: rhythm(1) 0; // Sets 1 unit of vertical rhythm on the top and bottom margin of lists.
+  /* LTR */
+  padding: 0 0 0 $typographic-indent; // Addresses list paddings set differently in IE6/7.
+}
+
+// Turn off margins on nested lists.
+ul ul, ul ol,
+ol ul, ol ol {
+  margin: 0; 
+  .item-list & { // Drupal override
+    margin: 0;
+  }
+}
+
+/* Description Lists */
+
+dl {
+  @include margin-trailer(1);
+}
+
+dd {
+  /* LTR */
+  margin: 0 0 0 $typographic-indent;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dt,
+dd {
+  line-height: px-to-em($base-line-height);
+}

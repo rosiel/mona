@@ -1,0 +1,424 @@
+; --------------------------------------------------------------------------------
+; Theme information
+; --------------------------------------------------------------------------------
+
+name = mona
+description = Aether starterkit for Aether, use drush to create a new subtheme using: drush aether newthemename
+screenshot = images/screenshot.png
+core = "7.x"
+engine = phptemplate
+base theme  = aether
+
+
+; --------------------------------------------------------------------------------
+; Regions
+; --------------------------------------------------------------------------------
+
+regions[page_top] = Page top
+regions[sidebar_first] = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[branding] = Branding
+regions[user_first] = User first
+regions[user_second] = User second
+regions[header_first] = Header first
+regions[header_second] = Header second
+regions[header_third] = Header third
+regions[main_menu] = Main Menu
+regions[navigation] = Navigation
+regions[navigation_first] = Navigation first
+regions[navigation_second] = Navigation second
+regions[feature] = Feature
+regions[preface_first] = Preface first
+regions[preface_second] = Preface second
+regions[preface_third] = Preface third
+regions[highlight] = Highlight
+regions[help] = Help
+regions[content] = Content
+regions[postscript_first] = Postscript first
+regions[postscript_second] = Postscript second
+regions[postscript_third] = Postscript third
+regions[postscript_fourth] = Postscript fourth
+regions[footer_first] = Footer first
+regions[footer_second] = Footer second
+regions[footer_third] = Footer third
+regions[footer_fourth] = Footer fourth
+regions[footer] = Footer
+regions[page_bottom] = Page bottom
+
+; --------------------------------------------------------------------------------
+; Features supported by this theme.
+; --------------------------------------------------------------------------------
+
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = search
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+; --------------------------------------------------------------------------------
+; Add required stylesheets, custom-css.css is not compiled from sass.
+; --------------------------------------------------------------------------------
+
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/custom-css.css
+
+; --------------------------------------------------------------------------------
+; Optionally add some JavaScripts to your theme.
+; --------------------------------------------------------------------------------
+
+; scripts[] = js/yourscript.js
+
+; --------------------------------------------------------------------------------
+; Optional Drupal Compass Module Support
+; http://drupal.org/project/compass
+; --------------------------------------------------------------------------------
+compass[status] = 1
+compass[sass_dir] = sass
+compass[css_dir] = css
+
+; --------------------------------------------------------------------------------
+; Theme Settings Defaults.
+; --------------------------------------------------------------------------------
+
+; Standard defaults.
+settings[aether_tabs] = 1
+settings[aether_breadcrumb_separator] = ' » '
+settings[wireframe_mode] = 0
+settings[clear_registry] = 0
+
+; Responsive javascript.
+; settings[aether_polyfills][] = respond
+settings[aether_polyfills][] = fixedie7
+settings[aether_polyfills][] = fixedie8
+settings[aether_polyfills][] = html5
+settings[aether_polyfills][] = meta
+settings[aether_polyfills][] = selectivizr
+settings[aether_polyfills][] = imgsizer
+settings[aether_polyfills][] = responsive_tables
+settings[aether_polyfills][] = ios_orientation_fix
+
+; Exclude Stylesheets.
+; settings[exclude_stylesheets][] = misc/vertical-tabs.css
+; settings[exclude_stylesheets][] = modules/aggregator/aggregator.css
+; settings[exclude_stylesheets][] = modules/block/block.css
+; settings[exclude_stylesheets][] = modules/dblog/dblog.css
+; settings[exclude_stylesheets][] = modules/file/file.css
+; settings[exclude_stylesheets][] = modules/filter/filter.css
+; settings[exclude_stylesheets][] = modules/help/help.css
+; settings[exclude_stylesheets][] = modules/menu/menu.css
+; settings[exclude_stylesheets][] = modules/openid/openid.css
+; settings[exclude_stylesheets][] = modules/profile/profile.css
+; settings[exclude_stylesheets][] = modules/statistics/statistics.css
+; settings[exclude_stylesheets][] = modules/syslog/syslog.css
+; settings[exclude_stylesheets][] = modules/system/admin.css
+; settings[exclude_stylesheets][] = modules/system/maintenance.css
+; settings[exclude_stylesheets][] = modules/system/system.css
+; settings[exclude_stylesheets][] = modules/system/system.admin.css
+; settings[exclude_stylesheets][] = modules/system/system.base.css
+; settings[exclude_stylesheets][] = modules/system/system.maintenance.css
+settings[exclude_stylesheets][] = modules/system/system.menus.css
+; settings[exclude_stylesheets][] = modules/system/system.messages.css
+settings[exclude_stylesheets][] = modules/system/system.theme.css
+; settings[exclude_stylesheets][] = modules/taxonomy/taxonomy.css
+; settings[exclude_stylesheets][] = modules/tracker/tracker.css
+; settings[exclude_stylesheets][] = modules/update/update.css
+
+; --------------------------------------------------------------------------------
+; Grid Theme Settings Defaults.
+; Note: Gutter and Grid numbers must match sass variables.
+; --------------------------------------------------------------------------------
+
+; Amount of media queries to use, must equal 5 for now.
+settings[media_queries] = '5'
+
+; Responsive '1' or fixed '0' (no mediaqueries)
+settings[responsive_toggle] = '1'
+
+; Grid debugging css, '0' for off, '1' for on.
+settings[grid_background][] = '0'
+
+; Gutter width choices in pixels.
+settings[gutter_width] = 20
+
+; Supported grids for each of the 5 media queries.
+settings[theme_grid1] = grid12-308
+settings[theme_grid_options1][] = grid12-308
+settings[theme_grid2] = grid12-428
+settings[theme_grid_options2][] = grid12-428
+settings[theme_grid3] = grid12-752
+settings[theme_grid_options3][] = grid12-752
+settings[theme_grid4] = grid12-968
+settings[theme_grid_options4][] = grid12-968
+settings[theme_grid5] = grid12-1148
+settings[theme_grid_options5][] = grid12-1148
+
+; Grid_sidebars
+; Options are:
+; splits, sidebars_first, sidebars_last
+; s1left_s2bottom, s1right_s2bottom
+; s1left_s2bottom_full, s1right_s2bottom_full
+; stacked_right, full
+settings[grid_sidebars_tiny] = 'full'
+settings[grid_sidebars_small] = 'full'
+settings[grid_sidebars_narrow] = 's1left_s2bottom'
+settings[grid_sidebars_large] = 'splits'
+settings[grid_sidebars_wide] = 'splits'
+
+; Grid_columns
+settings[grid_columns][] = '12'
+settings[grid_columns][] = '12'
+settings[grid_columns][] = '12'
+settings[grid_columns][] = '12'
+settings[grid_columns][] = '12'
+
+; Grid sizes
+settings[grid_size][] = 'tiny'
+settings[grid_size][] = 'small'
+settings[grid_size][] = 'narrow'
+settings[grid_size][] = 'large'
+settings[grid_size][] = 'wide'
+
+; Base css prefixes for each of the 5 media queries.
+settings[grid_prefix][] = 'g-h-'
+settings[grid_prefix][] = 'g-hl-'
+settings[grid_prefix][] = 'g-t-'
+settings[grid_prefix][] = 'g-tl-'
+settings[grid_prefix][] = 'g-d-'
+
+; Grid adjusted regions
+settings[grid_region][] = 'content'
+settings[grid_region][] = 'sidebar_first'
+settings[grid_region][] = 'sidebar_second'
+settings[grid_region][] = 'user_first'
+settings[grid_region][] = 'user_second'
+settings[grid_region][] = 'header_first'
+settings[grid_region][] = 'header_second'
+settings[grid_region][] = 'header_third'
+settings[grid_region][] = 'navigation_first'
+settings[grid_region][] = 'navigation_second'
+settings[grid_region][] = 'preface_first'
+settings[grid_region][] = 'preface_second'
+settings[grid_region][] = 'preface_third'
+settings[grid_region][] = 'postscript_first'
+settings[grid_region][] = 'postscript_second'
+settings[grid_region][] = 'postscript_third'
+settings[grid_region][] = 'postscript_fourth'
+settings[grid_region][] = 'footer_first'
+settings[grid_region][] = 'footer_second'
+settings[grid_region][] = 'footer_third'
+settings[grid_region][] = 'footer_fourth'
+
+settings[sidebar_first_width_tiny]     = '3'
+settings[sidebar_first_width_small]    = '3'
+settings[sidebar_first_width_narrow]   = '3'
+settings[sidebar_first_width_large]    = '3'
+settings[sidebar_first_width_wide]     = '3'
+settings[sidebar_second_width_tiny]    = '3'
+settings[sidebar_second_width_small]   = '3'
+settings[sidebar_second_width_narrow]  = '3'
+settings[sidebar_second_width_large]   = '3'
+settings[sidebar_second_width_wide]    = '3'
+
+settings[user_first_position_tiny]     = '1'
+settings[user_first_position_small]    = '1'
+settings[user_first_position_narrow]   = '1'
+settings[user_first_position_large]    = '1'
+settings[user_first_position_wide]     = '1'
+settings[user_first_width_tiny]        = '12'
+settings[user_first_width_small]       = '12'
+settings[user_first_width_narrow]      = '6'
+settings[user_first_width_large]       = '6'
+settings[user_first_width_wide]        = '6'
+
+settings[user_second_position_tiny]    = '1'
+settings[user_second_position_small]   = '1'
+settings[user_second_position_narrow]  = '7'
+settings[user_second_position_large]   = '7'
+settings[user_second_position_wide]    = '7'
+settings[user_second_width_tiny]       = '12'
+settings[user_second_width_small]      = '12'
+settings[user_second_width_narrow]     = '6'
+settings[user_second_width_large]      = '6'
+settings[user_second_width_wide]       = '6'
+
+settings[header_first_position_tiny]   = '1'
+settings[header_first_position_small]  = '1'
+settings[header_first_position_narrow] = '1'
+settings[header_first_position_large]  = '1'
+settings[header_first_position_wide]   = '1'
+settings[header_first_width_tiny]      = '12'
+settings[header_first_width_small]     = '12'
+settings[header_first_width_narrow]    = '6'
+settings[header_first_width_large]     = '4'
+settings[header_first_width_wide]      = '4'
+
+settings[header_second_position_tiny]   = '1'
+settings[header_second_position_small]  = '1'
+settings[header_second_position_narrow] = '7'
+settings[header_second_position_large]  = '5'
+settings[header_second_position_wide]   = '5'
+settings[header_second_width_tiny]      = '12'
+settings[header_second_width_small]     = '12'
+settings[header_second_width_narrow]    = '6'
+settings[header_second_width_large]     = '4'
+settings[header_second_width_wide]      = '4'
+
+settings[header_third_position_tiny]    = '1'
+settings[header_third_position_small]   = '1'
+settings[header_third_position_narrow]  = '1'
+settings[header_third_position_large]   = '9'
+settings[header_third_position_wide]    = '9'
+settings[header_third_width_tiny]       = '12'
+settings[header_third_width_small]      = '12'
+settings[header_third_width_narrow]     = '12'
+settings[header_third_width_large]      = '4'
+settings[header_third_width_wide]       = '4'
+
+settings[navigation_first_position_tiny]   = '1'
+settings[navigation_first_position_small]  = '1'
+settings[navigation_first_position_narrow] = '1'
+settings[navigation_first_position_large]  = '1'
+settings[navigation_first_position_wide]   = '1'
+settings[navigation_first_width_tiny]      = '12'
+settings[navigation_first_width_small]     = '12'
+settings[navigation_first_width_narrow]    = '12'
+settings[navigation_first_width_large]     = '9'
+settings[navigation_first_width_wide]      = '9'
+
+settings[navigation_second_position_tiny]   = '1'
+settings[navigation_second_position_small]  = '1'
+settings[navigation_second_position_narrow] = '1'
+settings[navigation_second_position_large]  = '10'
+settings[navigation_second_position_wide]   = '10'
+settings[navigation_second_width_tiny]      = '12'
+settings[navigation_second_width_small]     = '12'
+settings[navigation_second_width_narrow]    = '12'
+settings[navigation_second_width_large]     = '3'
+settings[navigation_second_width_wide]      = '3'
+
+settings[preface_first_position_tiny]       = '1'
+settings[preface_first_position_small]      = '1'
+settings[preface_first_position_narrow]     = '1'
+settings[preface_first_position_large]      = '1'
+settings[preface_first_position_wide]       = '1'
+settings[preface_first_width_tiny]          = '12'
+settings[preface_first_width_small]         = '12'
+settings[preface_first_width_narrow]        = '6'
+settings[preface_first_width_large]         = '4'
+settings[preface_first_width_wide]          = '4'
+
+settings[preface_second_position_tiny]      = '1'
+settings[preface_second_position_small]     = '1'
+settings[preface_second_position_narrow]    = '7'
+settings[preface_second_position_large]     = '5'
+settings[preface_second_position_wide]      = '5'
+settings[preface_second_width_tiny]         = '12'
+settings[preface_second_width_small]        = '12'
+settings[preface_second_width_narrow]       = '6'
+settings[preface_second_width_large]        = '4'
+settings[preface_second_width_wide]         = '4'
+
+settings[preface_third_position_tiny]       = '1'
+settings[preface_third_position_small]      = '1'
+settings[preface_third_position_narrow]     = '1'
+settings[preface_third_position_large]      = '9'
+settings[preface_third_position_wide]       = '9'
+settings[preface_third_width_tiny]          = '12'
+settings[preface_third_width_small]         = '12'
+settings[preface_third_width_narrow]        = '12'
+settings[preface_third_width_large]         = '4'
+settings[preface_third_width_wide]          = '4'
+
+settings[postscript_first_position_tiny]    = '1'
+settings[postscript_first_position_small]   = '1'
+settings[postscript_first_position_narrow]  = '1'
+settings[postscript_first_position_large]   = '1'
+settings[postscript_first_position_wide]    = '1'
+settings[postscript_first_width_tiny]       = '12'
+settings[postscript_first_width_small]      = '12'
+settings[postscript_first_width_narrow]     = '6'
+settings[postscript_first_width_large]      = '3'
+settings[postscript_first_width_wide]       = '3'
+
+settings[postscript_second_position_tiny]   = '1'
+settings[postscript_second_position_small]  = '1'
+settings[postscript_second_position_narrow] = '7'
+settings[postscript_second_position_large]  = '4'
+settings[postscript_second_position_wide]   = '4'
+settings[postscript_second_width_tiny]      = '12'
+settings[postscript_second_width_small]     = '12'
+settings[postscript_second_width_narrow]    = '6'
+settings[postscript_second_width_large]     = '3'
+settings[postscript_second_width_wide]      = '3'
+
+settings[postscript_third_position_tiny]    = '1'
+settings[postscript_third_position_small]   = '1'
+settings[postscript_third_position_narrow]  = '1'
+settings[postscript_third_clear_narrow]     = '1'
+settings[postscript_third_position_large]   = '7'
+settings[postscript_third_position_wide]    = '7'
+settings[postscript_third_width_tiny]       = '12'
+settings[postscript_third_width_small]      = '12'
+settings[postscript_third_width_narrow]     = '6'
+settings[postscript_third_width_large]      = '3'
+settings[postscript_third_width_wide]       = '3'
+
+settings[postscript_fourth_position_tiny]   = '1'
+settings[postscript_fourth_position_small]  = '1'
+settings[postscript_fourth_position_narrow] = '7'
+settings[postscript_fourth_position_large]  = '10'
+settings[postscript_fourth_position_wide]   = '10'
+settings[postscript_fourth_width_tiny]      = '12'
+settings[postscript_fourth_width_small]     = '12'
+settings[postscript_fourth_width_narrow]    = '6'
+settings[postscript_fourth_width_large]     = '3'
+settings[postscript_fourth_width_wide]      = '3'
+
+settings[footer_first_position_tiny]        = '1'
+settings[footer_first_position_small]       = '1'
+settings[footer_first_position_narrow]      = '1'
+settings[footer_first_position_large]       = '1'
+settings[footer_first_position_wide]        = '1'
+settings[footer_first_width_tiny]           = '12'
+settings[footer_first_width_small]          = '12'
+settings[footer_first_width_narrow]         = '6'
+settings[footer_first_width_large]          = '3'
+settings[footer_first_width_wide]           = '3'
+
+settings[footer_second_position_tiny]       = '1'
+settings[footer_second_position_small]      = '1'
+settings[footer_second_position_narrow]     = '7'
+settings[footer_second_position_large]      = '4'
+settings[footer_second_position_wide]       = '4'
+settings[footer_second_width_tiny]          = '12'
+settings[footer_second_width_small]         = '12'
+settings[footer_second_width_narrow]        = '6'
+settings[footer_second_width_large]         = '3'
+settings[footer_second_width_wide]          = '3'
+
+settings[footer_third_position_tiny]        = '1'
+settings[footer_third_position_small]       = '1'
+settings[footer_third_position_narrow]      = '1'
+settings[footer_third_position_large]       = '7'
+settings[footer_third_position_wide]        = '7'
+settings[footer_third_width_tiny]           = '12'
+settings[footer_third_width_small]          = '12'
+settings[footer_third_width_narrow]         = '6'
+settings[footer_third_clear_narrow]         = '1'
+settings[footer_third_width_large]          = '3'
+settings[footer_third_width_wide]           = '3'
+
+settings[footer_fourth_position_tiny]       = '1'
+settings[footer_fourth_position_small]      = '1'
+settings[footer_fourth_position_narrow]     = '7'
+settings[footer_fourth_position_large]      = '10'
+settings[footer_fourth_position_wide]       = '10'
+settings[footer_fourth_width_tiny]          = '12'
+settings[footer_fourth_width_small]         = '12'
+settings[footer_fourth_width_narrow]        = '6'
+settings[footer_fourth_width_large]         = '3'
+settings[footer_fourth_width_wide]          = '3'

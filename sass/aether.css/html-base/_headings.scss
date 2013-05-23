@@ -1,0 +1,81 @@
+/*
+ * ==================================================
+ * Headings
+ * ==================================================
+ */
+
+/* Headings/small */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font-family;
+  font-style: normal;
+  font-weight: 400;
+  @include leader(0);
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+// By adding class names, you can change an h3 to an h1 if necessary.
+
+h1,.alpha {
+  @include adjust-font-size-to($font-size-h1,1.2);
+  @include trailer(0.8, $font-size-h1);
+}
+
+h2,.beta {
+  @include adjust-font-size-to($font-size-h2,1.1);
+  @include trailer(0.9, $font-size-h2);
+}
+
+h3,.gamma {
+  @include adjust-font-size-to($font-size-h3,1);
+  @include trailer(1, $font-size-h3);
+}
+
+h4,.delta {
+  @include adjust-font-size-to($font-size-h4,1);
+  @include trailer(1, $font-size-h4);
+}
+
+h5,.epsilon {
+  @include adjust-font-size-to($font-size-h5,1);
+  @include trailer(1, $font-size-h5);
+}
+
+h6,.zeta {
+  @include adjust-font-size-to($font-size-h6,1);
+  @include trailer(1, $font-size-h6);
+  color: $text-color-light;
+}
+
+small {
+  @include trailer(1, $font-size-xs);
+  font-size: px-to-em($font-size-xs);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  small {
+    font-size: px-to-em($font-size-md);
+    color: $text-color-light;
+  }
+}
+
+// h2 retains line height so this is removed to keep Vertical Rhythm
+h2.element-invisible {
+  line-height: 0;
+}

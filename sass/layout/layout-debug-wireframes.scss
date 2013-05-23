@@ -1,0 +1,44 @@
+@import "../variables";
+/*
+ * ==================================================
+ * Wireframes
+ * ==================================================
+ */
+
+/* Wireframes */
+
+// Only shown when enabled in debugging section of theme-settings.
+
+.with-wireframes {
+  .user-columns-wrapper,
+  .branding-wrapper,
+  .header-columns-wrapper,
+  .navigation-columns-wrapper,
+  .feature-wrapper,
+  .preface-wrapper,
+  .content-wrapper,
+  .postscript-wrapper,
+  .footer-columns-wrapper,
+  .footer-wrapper {
+    outline: 1px solid #ddd;
+  }
+  .user-inner,
+  .header-inner,
+  .branding-inner,
+  .main-menu-inner,
+  .navigation-inner,
+  .preface-inner,
+  .feature-inner,
+  .content-inner,
+  .postscript-inner,
+  .sidebar-inner,
+  .footer-inner {
+    outline: 1px solid #666;
+  }
+  .g-all-row {
+    outline: 1px solid #ccc;
+  }
+  .block {
+    outline: 1px solid #aaa;
+  }
+}

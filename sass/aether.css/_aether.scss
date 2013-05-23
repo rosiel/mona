@@ -1,0 +1,112 @@
+/*
+ * ==================================================
+ * aether.css
+ * ==================================================
+ */
+
+///
+// aether.css acts as a base stylesheet which you should extend with your own
+// theme stylesheet.
+//
+// Always aggregate your CSS before deplying to production!
+//
+// The table of contents below maps to section titles of the same name, to jump
+// to any section simply run a find for $[SECTION-TITLE].
+//
+// aether.css is written to this standard: github.com/krisbulman/CSS-Guidelines
+//
+// LICENSE
+//
+// This file is part of Aether.css.  Aether.css is free software: you can
+// redistribute it and/or modify it under the terms of the GNU General Public
+// License as published by the Free Software Foundation, version 2.
+//
+// This program is distributed in the hope that it will be useful, but WITHOUT
+// ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+// FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+// details.
+//
+// You should have received a copy of the GNU General Public License along with
+// this program; if not, write to the Free Software Foundation, Inc., 51
+// Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+//
+// Copyright Kris Bulman
+///
+
+///
+// ==================================================
+// $CONTENTS
+// ==================================================
+///
+
+///
+// CONTENTS............Starts here
+// WARNING.............A note about relenquishing control
+// IMPORTS.............Begin importing the sections below
+//
+// UTILITIES...........Sass mixin helpers
+// NORMALIZE...........normalize.css
+// FORMALIZE...........formalize.css
+// MEDIAQUERIES........Maps media queries to, and sets defaults for breakpoint
+//
+// MAIN................High-level elements like `html`, `body`, etc.
+// HEADINGS............Heading hierarchy
+// BLOCKQUOTES.........Quote and block quote structure
+// CODE................Code block formatting
+// LINKS...............Text decoration and drupals inline links
+// LISTS...............Default list behaviour and taming Drupal's lists
+// IMAGES..............Responsive Images
+// TABLES..............Table structure
+// FORMS...............Form vertical rhythm
+//
+// BUTTONS.............
+// TABS................
+// NAVIGATION..........
+// PAGINATION..........
+// BREADCRUMBS.........
+// NODES...............
+// MESSAGES............
+// COMMENTS............
+// PROGRESS............
+// UNPUBLISHED.........
+//
+// WIDTHS..............Width classes for use alongside the grid system etc
+// BRAND...............Helper class to apply brand treatment to elements
+// HELPER..............A series of helper classes to use arbitrarily
+// DEBUG...............Enable to add visual flags for debugging purposes
+///
+
+// Setup vars
+@import "../variables";
+
+// Generic utility styles etc.
+@import "common/normalize";
+@import "common/formalize";
+@import "common/mediaqueries"; // produces no css
+@import "common/patterns";
+
+/* Base styles; unclassed HTML elements etc. */
+@import "html-base/shared";
+@import "html-base/main";
+@import "html-base/images";
+@import "html-base/headings";
+@import "html-base/blockquotes";
+@import "html-base/code";
+@import "html-base/links";
+@import "html-base/lists";
+@import "html-base/tables";
+@import "html-base/forms";
+@import "html-base/type";
+
+/* Objects and abstractions */
+// Single-line comment (//) out any objects you do not need in your project.
+@import "objects/buttons";
+@import "objects/tabs";
+@import "objects/navigation";
+@import "objects/pagination";
+@import "objects/breadcrumbs";
+@import "objects/nodes";
+@import "objects/messages";
+@import "objects/comments";
+@import "objects/progress";
+@import "objects/unpublished";

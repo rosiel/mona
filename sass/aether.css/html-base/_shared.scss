@@ -1,0 +1,54 @@
+/*
+ * ==================================================
+ * Shared
+ * ==================================================
+ */
+
+// To achieve a pleasant vertical rhythm, we use Compass' Vertical Rhythm mixins
+// so that the line height of our base font becomes the basic unit of vertical
+// measurement. We use multiples of that unit to set the top and bottom margins
+// for our block level elements and to set the line heights of any fonts.
+// For more information, see http://24ways.org/2006/compose-to-a-vertical-rhythm
+
+// Vertical Rhythm, add and/or remove tags as your baseline grid needs.
+
+// Base elements
+p,blockquote,q,pre,
+address,code,samp,
+dl,ol,ul,
+form,table,fieldset,
+menu,figure,figcaption,
+button,hgroup,
+// Objects and abstractions
+%sass-margin-bottom,
+.block,
+.breadcrumb,
+.comments,
+.comment,
+.submitted,
+.node .field,
+.media,
+.island,
+.islet{
+  @include trailer(1);
+.islet &{
+  @include trailer(0.5);
+  }
+}
+
+// Doubled up `margin-bottom` helper class.
+.landmark {
+  @include trailer(2);
+}
+
+// `hr` elements only take up a few pixels, so we need to give 
+// them special treatment regarding vertical rhythm.
+hr {
+  @include trailer(0.98);
+}
+
+// Where `margin-left` is concerned we want to try and indent certain elements
+// by a consistent amount. Define that amount once, here.
+ul,ol,dd{
+  margin-left: $typographic-indent;
+}

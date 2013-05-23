@@ -1,0 +1,14 @@
+@import "../base";
+@import "grid-classes";
+
+$aether-break: $break-wide;
+$aether-grid-numbers-top: 110px;
+$aether-constraint: max;
+$aether-grid-type: fixed;
+$aether-columns: $aether-columns-desktop;
+$aether-grid-width: $aether-grid-width-desktop;
+$aether-media: $aether-media-desktop;
+
+.ie6-8 {
+  @include aether-grid-classes;
+}

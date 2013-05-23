@@ -1,0 +1,24 @@
+/*
+ * ==================================================
+ * Breadcrumbs
+ * ==================================================
+ */
+
+/* Breadcrumbs */
+
+.breadcrumb {
+  color: adjust-color($link-color-alt, $lightness: -10);
+  ul {
+    @include leader(0);
+    @include trailer(0);
+    margin-left: 0;
+    padding-left: 0;
+  }
+  li {
+    display: inline;
+  }
+  a {
+    @include link-colors($link-color-alt, $hover: $link-color-hover-alt, $focus: $link-color-hover-alt, $visited: $link-color-visited-alt, $active: $link-color-active-alt);
+    padding: 0;
+    }
+}
