@@ -101,6 +101,7 @@ function STARTERKIT_preprocess_region(&$variables, $hook) {
 }
 */
 
+
 /**
  * Override or insert variables into the block templates.
  *

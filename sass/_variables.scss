@@ -36,7 +36,8 @@ $font-size-h6:                 $font-size-sm;
 $typographic-indent:           $font-size-xxl;
 
 // Font Stacks
-$header-font-family:            Georgia,"Times New Roman",Times,serif;
+//$header-font-family:            Georgia,"Times New Roman",Times,serif;
+$header-font-family:           'Open Sans', "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;
 //$text-font-family:             Georgia,"Times New Roman",Times,serif;
 $text-font-family:             'Open Sans', "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;
 $button-font-family:           "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;
@@ -57,7 +58,7 @@ $link-color-visited-alt:       $link-color-alt;
 $link-color-active-alt:        adjust-color($link-color-hover-alt, $lightness: -15);
 
 // Text Colors
-$text-color:                   #222;
+$text-color:                   #333 ;
 $text-color-light:             adjust-color($text-color, $lightness: 54);
 $text-border:                  #ddd;
 $text-border-alt:              adjust-lightness($text-border, -14);
@@ -164,3 +165,19 @@ $aether-media-handheld:               "h";
 // Component mixins
 @import "aether-components";
 @import 'aether.css/common/mediaqueries';
+
+
+// Added by Rosie
+// Theme colors
+$green:             #9FC100;
+$orange:            #C6651B;
+$yellow:            #E2D830;
+$grey:              #897B5E;
+$blue:              #79ABCF;
+
+// Linking colours
+$climatechange:     adjust-color($green, $lightness: 10);
+$ecosystems:        adjust-color($orange, $lightness: 10);
+$enforcement:       adjust-color($yellow, $lightness: 10);
+$economy:           adjust-color($grey, $lightness: 10);
+$pollutants:        adjust-color($blue, $lightness: 10);
