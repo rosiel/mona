@@ -7,6 +7,8 @@
 // Look here for the Compass mixin docs http://compass-style.org/index/mixins/
 //
 
+@import "compass/css3/box-shadow";
+
 .block {
   @include margin-trailer(1, $base-font-size);
 }
@@ -41,13 +43,21 @@ $unselected-menu: $dulled;
     margin: 0.4em;
     padding: 0;
     //list-style-type: none;
-    @include delimited-list(' |');
+    @include inline-list;
+  }
+  li {
+      padding-left: 1em;
   }
   li a{
     color: $unselected-menu;
+    text-decoration: none;
   }
   a.language-link.session-active {
     color: $selected-menu;
+    text-decoration: underline;
+  }
+  a:hover {
+      text-decoration: underline;
   }
   li:after {
       color: $unselected-menu;
@@ -101,7 +111,7 @@ $unselected-menu: $dulled;
 
 #block-islandora_solr-simple{
   color: black;
-  margin: 0;
+  margin: 1px 0;
   form {
     margin-bottom: 0;
     margin-left: auto;
@@ -110,7 +120,7 @@ $unselected-menu: $dulled;
     text-align: center;
   }
   
-  #edit-islandora-simple-search-query {
+#edit-islandora-simple-search-query {
     width: 60%;
   }
   a {
@@ -118,7 +128,7 @@ $unselected-menu: $dulled;
   }
 }
 
-#block-custom_solr_config-keyword_facets {
+#block-custom_solr_config-keyword_facets, #block-custom_solr_config-keyword_facets_fr, #block-custom_solr_config-keyword_facets_es {
     margin-bottom: 0;
     ul {
         li {
@@ -141,37 +151,42 @@ $unselected-menu: $dulled;
         *.keyword-0{
             border-bottom-color: $climatechange;
             a:hover {
-                color: $climatechange;
+                background-color: $climatechange;
+                color: #333;
             }
         }
         *.keyword-1{
             border-bottom-color: $pollutants;
             a:hover {
-                color: $pollutants;
+                background-color: $pollutants;
+                color: #333;
             }
         }
         *.keyword-2{
             border-bottom-color: $ecosystems;
             a:hover {
-                color: $ecosystems;
+                background-color: $ecosystems;
+                color: #333;
             }
         }
         *.keyword-3{
             border-bottom-color: $economy;
             a:hover {
-                color: $economy;
+                background-color: $economy;
+                color: #333;
             }
         }
         *.keyword-4{
             border-bottom-color: $enforcement;
             a:hover {
-                color: $enforcement;
+                background-color: $enforcement;
+                color: #333;
             }
         }
     }
 }
 
-#block-custom_solr_config-series_links, #block-custom_solr_config-external_links {
+.adf {
     background-color: #F5F5F5;
     h2 {
         background-color: #ECECEC;
@@ -227,4 +242,93 @@ $unselected-menu: $dulled;
     margin: 0;
     padding: 0;
     float: left;
+}
+
+// Islandora Facets
+
+#block-islandora_solr-basic_facets, #block-islandora_solr-current_query, #block-islandora_solr-sort, #block-custom_solr_config-series_links, #block-custom_solr_config-external_links {
+    //@include box-shadow(#333 2px 2px 5px);
+    background-color: $background-grey;
+    .block-title, .content { 
+        padding: $borderwidth/2 $borderwidth;
+    }
+    .block-title {
+        background-color: adjust-color($background-grey, $lightness: -10);
+        margin: 0;
+        color: #333;
+        font-size: $font-size-normal;
+        font-weight: 500;
+    }
+    h3 {
+        margin: 0;
+        font-size: $font-size-normal;
+        color: #333;
+        font-weight: normal;
+    }
+    font-size: $font-size-normal;
+    ul {
+        margin-top: 0;
+        margin-bottom: 0;
+        //margin-left: $typographic-indent;
+        padding: 0 0 0 1em;
+        list-style-type: none;
+    }
+    li {
+        line-height: 1.5 * $base-font-size;
+        a {
+        color: #333;
+        }
+        a:hover {
+        color: $ecosystems;
+        text-decoration: none;
+        }
+    }
+    a {
+        font-weight: normal;
+    }
+    .item-list ul li {
+        margin: 0;
+        padding: 0;
+    }
+    .plusminus {
+        display: none;
+    }
+    a.soft-limit {
+        padding-left: 1em; // to match ul above
+    }
+}
+
+#block-islandora_solr-current_query {
+    h3 {
+        margin: 0;
+    }
+}
+
+
+.islandora-solr-search-result {
+    color: $text-color;
+    .type {
+        font-style: italic;
+        color: $text-color-light;
+        font-size: $font-size-md;
+    }
+    .subTitle {
+        font-style: italic;
+    }
+    .date, .author, .filesize, .language, .filetype {
+        display: inline-block;
+    }
+    .date:after {
+        content: ' | ';
+        color: $text-color-light;
+        //display: inline;
+    }
+    .author:after{
+        white-space: pre;
+        content: "\A";
+    }
+
+    .type-icon {
+        margin: 0 $base-font-size -2px $base-font-size;
+    }
 }

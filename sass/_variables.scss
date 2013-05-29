@@ -46,7 +46,7 @@ $input-font-family:            Arial, "Liberation Sans", FreeSans, sans-serif;
 $mono-font-family:             Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
 
 // Main Link Colors
-$link-color:                   #06c;
+$link-color:                   #444;
 $link-color-hover:             adjust-color($link-color, $lightness: -10, $saturation: 10);
 $link-color-visited:           $link-color;
 $link-color-active:            adjust-color($link-color-hover, $lightness: -5);
@@ -169,7 +169,7 @@ $aether-media-handheld:               "h";
 
 // Added by Rosie
 // Theme colors
-$green:             #9FC100;
+$green:             #9EC11A;
 $orange:            #C6651B;
 $yellow:            #E2D830;
 $grey:              #897B5E;
@@ -181,3 +181,8 @@ $ecosystems:        adjust-color($orange, $lightness: 10);
 $enforcement:       adjust-color($yellow, $lightness: 10);
 $economy:           adjust-color($grey, $lightness: 10);
 $pollutants:        adjust-color($blue, $lightness: 10);
+
+// theming appearance stuff
+$borderwidth:       15px;
+
+$background-grey:   #eee;
