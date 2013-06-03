@@ -42,11 +42,10 @@ $unselected-menu: $dulled;
   ul {
     margin: 0.4em;
     padding: 0;
-    //list-style-type: none;
     @include inline-list;
   }
-  li {
-      padding-left: 1em;
+  ul li {
+      padding-left: 0.5em;
   }
   li a{
     color: $unselected-menu;
@@ -111,7 +110,7 @@ $unselected-menu: $dulled;
 
 #block-islandora_solr-simple{
   color: black;
-  margin: 1px 0;
+  margin: 0;
   form {
     margin-bottom: 0;
     margin-left: auto;
@@ -132,17 +131,17 @@ $unselected-menu: $dulled;
     margin-bottom: 0;
     ul {
         li {
-            border: 0 0 3px 0;
+            border: 0 0 -3px 0;
             border-bottom-style: solid;
             display: inline-block;
             padding: 0;
-            height: 28px;
+            //height: 28px;
         }
         a {
             color: #DDD;
-            padding: 8px 17px 8px;
+            padding: 5px 17px 6px;
             font-weight: 200;
-            //display: inline-block;
+            display: inline-block;
 
         }
         a:hover {

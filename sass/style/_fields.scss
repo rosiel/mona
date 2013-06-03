@@ -7,3 +7,12 @@
 .email {
   @include aether-form("standard");
 }
+
+#edit-islandora-simple-search-query.form-text {
+    font-size: 14px;
+    background-color: #555;
+    @include box-shadow(black 0 0 0);
+    border-style: none;
+    @include border-radius(0);
+    height: 31px;
+}
