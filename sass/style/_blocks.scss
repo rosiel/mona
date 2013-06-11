@@ -25,6 +25,10 @@
   @include margin-leader(1);
 }
 
+.region-branding {
+    background-color: $dark-grey;
+}
+
 $bright: #CCC;
 $dulled: #AAA;
 
@@ -91,6 +95,7 @@ $unselected-menu: $dulled;
 
 #block-system-main-menu {
   float: left;
+  padding-left: 150px;
   margin-bottom: 0;
   ul {
     @include horizontal-list-container;
@@ -105,7 +110,6 @@ $unselected-menu: $dulled;
     }
   }
 }
-
 
 
 #block-islandora_solr-simple{
@@ -127,7 +131,9 @@ $unselected-menu: $dulled;
   }
 }
 
-#block-custom_solr_config-keyword_facets, #block-custom_solr_config-keyword_facets_fr, #block-custom_solr_config-keyword_facets_es {
+#block-custom_solr_config-keyword_facets, 
+#block-custom_solr_config-keyword_facets_fr, 
+#block-custom_solr_config-keyword_facets_es {
     margin-bottom: 0;
     ul {
         li {
@@ -138,9 +144,10 @@ $unselected-menu: $dulled;
             //height: 28px;
         }
         a {
-            color: #DDD;
+            color: #EEE;
             padding: 5px 17px 6px;
-            font-weight: 200;
+            font-weight: 300;
+            letter-spacing: 0.1em;
             display: inline-block;
 
         }
@@ -218,10 +225,11 @@ $unselected-menu: $dulled;
 
 .navigation-inner {
     margin-bottom: 0;
+    margin-top: -20px;
 }
 
 .navigation-inner-wrapper {
-    background-color: #333;
+    background-color: $dark-grey;
     @include margin-trailer(1, $base-font-size);
 }
 
@@ -237,15 +245,13 @@ $unselected-menu: $dulled;
 }
 
 
-#block-system-main-menu {
-    margin: 0;
-    padding: 0;
-    float: left;
-}
-
 // Islandora Facets
 
-#block-islandora_solr-basic_facets, #block-islandora_solr-current_query, #block-islandora_solr-sort, #block-custom_solr_config-series_links, #block-custom_solr_config-external_links {
+#block-islandora_solr-basic_facets, 
+#block-islandora_solr-current_query, 
+#block-islandora_solr-sort, 
+#block-custom_solr_config-series_links, 
+#block-custom_solr_config-external_links {
     //@include box-shadow(#333 2px 2px 5px);
     background-color: $background-grey;
     .block-title, .content { 
@@ -273,7 +279,7 @@ $unselected-menu: $dulled;
         list-style-type: none;
     }
     li {
-        line-height: 1.5 * $base-font-size;
+        line-height: 1 * $base-font-size;
         a {
         color: #333;
         }
@@ -281,12 +287,13 @@ $unselected-menu: $dulled;
         color: $ecosystems;
         text-decoration: none;
         }
+        margin-bottom: 0.5 * $base-font-size;
     }
     a {
         font-weight: normal;
     }
     .item-list ul li {
-        margin: 0;
+        //margin: 0;
         padding: 0;
     }
     .plusminus {
@@ -322,6 +329,9 @@ $unselected-menu: $dulled;
         color: $text-color-light;
         //display: inline;
     }
+    .author {
+        display: inline;
+    }
     .author:after{
         white-space: pre;
         content: "\A";
@@ -330,4 +340,11 @@ $unselected-menu: $dulled;
     .type-icon {
         margin: 0 $base-font-size -2px $base-font-size;
     }
+}
+
+
+// ISLANDORA OBJECT DISPLAY _ MOVE AWAY
+
+.islandora-multilingual-content {
+   // @include single-box-shadow(#333, 1px, 1px, 5px);
 }

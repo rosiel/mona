@@ -49,14 +49,27 @@
   .ie7 & {
     @include float(left);
   }
+  height: 140px;
 }
 
 .logo {
   @include center-vertically;
   height: 100px;
-  width: 100px;
-  padding: 0 10px 0 0;
-    .ie7 & {
+  width: 150px;
+  img {
+      @include single-box-shadow(#111, 1px, 1px, 3px);
+      height: 100px;
+      background-color: white;
+      padding: 25px 5px 10px 5px;
+      //margin-left: 10px;
+      position: relative;
+      top: -25px;
+      border-left: black 10px solid;
+      border-right: black 10px solid;
+      border-bottom: black 10px solid;
+      //padding: 0 10px 0 0;
+  }
+  .ie7 & {
       @include float(left);
     }
 }
