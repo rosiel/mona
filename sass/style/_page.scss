@@ -90,4 +90,12 @@
   @include adjust-font-size-to($font-size-xl,1);
 }
 
+#page {
+    background: url(../images/texture6.jpg) repeat;
+}
 
+// Footer 
+#footer {
+    background-color: $dark-grey;
+    color: $background-grey;
+}
