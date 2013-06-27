@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Lora);
+@import url(http://fonts.googleapis.com/css?family=Lora);
 /* ================================================== aether.css ================================================== */
 /* ================================================== Normalize ================================================== */
 /* line 14, ../sass/aether.css/common/_normalize.scss */
@@ -205,7 +207,7 @@ figure > img { display: block; }
 /* ================================================== Headings ================================================== */
 /* Headings/small */
 /* line 14, ../sass/aether.css/html-base/_headings.scss */
-h1, h2, h3, h4, h5, h6 { font-family: "Open Sans", "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif; font-style: normal; font-weight: 400; margin-top: 0em; }
+h1, h2, h3, h4, h5, h6 { font-family: "Lora", "Open Sans", "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif; font-style: normal; font-weight: 400; margin-top: 0em; }
 
 /* line 24, ../sass/aether.css/html-base/_headings.scss */
 h3, h4, h5, h6 { font-weight: 700; }
@@ -540,7 +542,7 @@ var, address { font-style: normal; }
 /* Objects and abstractions */
 /* ================================================== Buttons ================================================== */
 /* line 7, ../sass/aether.css/objects/_buttons.scss */
-.form-submit[type="submit"] { margin-bottom: 1.71429em; margin-right: 0.3em; font-family: "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif; font-size: 10.5px; padding: 0.64em 1em; display: inline-block; cursor: pointer; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; }
+.form-submit[type="submit"] { margin-bottom: 1.71429em; margin-right: 0.3em; font-family: "Lora", "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif; font-size: 10.5px; padding: 0.64em 1em; display: inline-block; cursor: pointer; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; }
 /* line 73, ../sass-extensions/aether-components/stylesheets/aether-components/_buttons.scss */
 .form-submit[type="submit"]::-moz-focus-inner { padding: 0 !important; margin: -1px !important; }
 
@@ -573,7 +575,7 @@ input[type="file"] { height: 28px; line-height: 28px; }
 
 /* Primary tabs */
 /* line 29, ../sass/aether.css/objects/_tabs.scss */
-.primary { font-family: "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif; margin-top: -1px; padding: 0 2px; }
+.primary { font-family: "Lora", "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif; margin-top: -1px; padding: 0 2px; }
 /* line 33, ../sass/aether.css/objects/_tabs.scss */
 .primary li { font-size: 0.75em; line-height: 2.05714em; -moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; border-top-left-radius: 4px; -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; border-top-right-radius: 4px; text-shadow: 1px 1px 0 white; border-color: #bbbbbb; border-style: solid; border-width: 1px 1px 0 1px; }
 /* line 41, ../sass/aether.css/objects/_tabs.scss */
@@ -778,7 +780,7 @@ p.unpublished { height: 0; overflow: visible; color: #d8d8d8; font-size: 75px; l
 .ie7 .logo { display: inline; float: left; }
 
 /* line 77, ../sass/style/_page.scss */
-.site-name { font-size: 1.625em; line-height: 1.05495em; margin-top: 0em; margin-bottom: 0.32703em; font-family: "Open Sans", "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif; font-weight: bold; }
+.site-name { font-size: 1.625em; line-height: 1.05495em; margin-top: 0em; margin-bottom: 0.32703em; font-family: "Lora", "Open Sans", "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif; font-weight: bold; }
 /* line 83, ../sass/style/_page.scss */
 .site-name a { color: #333333; text-decoration: none; }
 /* line 18, ../../../../../../../../../Users/rosie/.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
@@ -994,50 +996,58 @@ a.active { color: #211b1b; }
 /* line 275, ../sass/style/_blocks.scss */
 #block-islandora_solr-basic_facets .block-title, #block-islandora_solr-basic_facets .content, #block-islandora_solr-current_query .block-title, #block-islandora_solr-current_query .content, #block-islandora_solr-sort .block-title, #block-islandora_solr-sort .content, #block-custom_solr_config-series_links .block-title, #block-custom_solr_config-series_links .content, #block-custom_solr_config-external_links .block-title, #block-custom_solr_config-external_links .content { padding: 7.5px 15px; }
 /* line 278, ../sass/style/_blocks.scss */
-#block-islandora_solr-basic_facets .block-title, #block-islandora_solr-current_query .block-title, #block-islandora_solr-sort .block-title, #block-custom_solr_config-series_links .block-title, #block-custom_solr_config-external_links .block-title { background-color: #333333; outline: 1px solid #333333; margin: 0; color: #ccc; font-size: 14px; font-weight: 400; }
+#block-islandora_solr-basic_facets .block-title, #block-islandora_solr-current_query .block-title, #block-islandora_solr-sort .block-title, #block-custom_solr_config-series_links .block-title, #block-custom_solr_config-external_links .block-title { background-color: #333333; margin: 0 15px 0 0; color: #ccc; font-size: 14px; font-weight: 400; }
 /* line 286, ../sass/style/_blocks.scss */
-#block-islandora_solr-basic_facets h3, #block-islandora_solr-current_query h3, #block-islandora_solr-sort h3, #block-custom_solr_config-series_links h3, #block-custom_solr_config-external_links h3 { margin: 0; font-size: 14px; line-height: 21px; color: #333; font-weight: 600; border-top: 1px solid #ccc; margin-top: 7px; padding-top: 7px; }
-/* line 297, ../sass/style/_blocks.scss */
+#block-islandora_solr-basic_facets h3, #block-islandora_solr-current_query h3, #block-islandora_solr-sort h3, #block-custom_solr_config-series_links h3, #block-custom_solr_config-external_links h3 { margin: 0; font-size: 14px; line-height: 21px; color: #333; font-weight: 600; border-top: 1px solid #ccc; margin-top: 7px; padding-top: 7px; font-family: "Open Sans", "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif; }
+/* line 298, ../sass/style/_blocks.scss */
 #block-islandora_solr-basic_facets .islandora-solr-facet-wrapper:first-child h3, #block-islandora_solr-current_query .islandora-solr-facet-wrapper:first-child h3, #block-islandora_solr-sort .islandora-solr-facet-wrapper:first-child h3, #block-custom_solr_config-series_links .islandora-solr-facet-wrapper:first-child h3, #block-custom_solr_config-external_links .islandora-solr-facet-wrapper:first-child h3 { margin-top: 0; border-top: none; padding-top: 0; }
-/* line 305, ../sass/style/_blocks.scss */
+/* line 306, ../sass/style/_blocks.scss */
 #block-islandora_solr-basic_facets ul, #block-islandora_solr-current_query ul, #block-islandora_solr-sort ul, #block-custom_solr_config-series_links ul, #block-custom_solr_config-external_links ul { margin-top: 0; margin-bottom: 0; padding: 0 0 0 1em; list-style-type: none; }
-/* line 312, ../sass/style/_blocks.scss */
+/* line 313, ../sass/style/_blocks.scss */
 #block-islandora_solr-basic_facets li, #block-islandora_solr-current_query li, #block-islandora_solr-sort li, #block-custom_solr_config-series_links li, #block-custom_solr_config-external_links li { line-height: 21px; }
-/* line 314, ../sass/style/_blocks.scss */
+/* line 315, ../sass/style/_blocks.scss */
 #block-islandora_solr-basic_facets li a, #block-islandora_solr-current_query li a, #block-islandora_solr-sort li a, #block-custom_solr_config-series_links li a, #block-custom_solr_config-external_links li a { color: #333; }
-/* line 317, ../sass/style/_blocks.scss */
+/* line 318, ../sass/style/_blocks.scss */
 #block-islandora_solr-basic_facets li a:hover, #block-islandora_solr-current_query li a:hover, #block-islandora_solr-sort li a:hover, #block-custom_solr_config-series_links li a:hover, #block-custom_solr_config-external_links li a:hover { color: #e37e31; text-decoration: none; }
-/* line 323, ../sass/style/_blocks.scss */
+/* line 324, ../sass/style/_blocks.scss */
 #block-islandora_solr-basic_facets a, #block-islandora_solr-current_query a, #block-islandora_solr-sort a, #block-custom_solr_config-series_links a, #block-custom_solr_config-external_links a { font-weight: normal; }
-/* line 326, ../sass/style/_blocks.scss */
+/* line 327, ../sass/style/_blocks.scss */
 #block-islandora_solr-basic_facets .item-list ul li, #block-islandora_solr-current_query .item-list ul li, #block-islandora_solr-sort .item-list ul li, #block-custom_solr_config-series_links .item-list ul li, #block-custom_solr_config-external_links .item-list ul li { margin: 0; padding: 0; }
-/* line 330, ../sass/style/_blocks.scss */
+/* line 331, ../sass/style/_blocks.scss */
 #block-islandora_solr-basic_facets .plusminus, #block-islandora_solr-current_query .plusminus, #block-islandora_solr-sort .plusminus, #block-custom_solr_config-series_links .plusminus, #block-custom_solr_config-external_links .plusminus { display: none; }
-/* line 333, ../sass/style/_blocks.scss */
+/* line 334, ../sass/style/_blocks.scss */
 #block-islandora_solr-basic_facets a.soft-limit, #block-islandora_solr-current_query a.soft-limit, #block-islandora_solr-sort a.soft-limit, #block-custom_solr_config-series_links a.soft-limit, #block-custom_solr_config-external_links a.soft-limit { padding-left: 1em; }
 
-/* line 340, ../sass/style/_blocks.scss */
+/* line 341, ../sass/style/_blocks.scss */
 #block-custom_solr_config-series_links li, #block-custom_solr_config-external_links li { padding: 5px 0; border-bottom: 1px solid #ccc; }
 
-/* line 347, ../sass/style/_blocks.scss */
+/* line 348, ../sass/style/_blocks.scss */
 #block-islandora_solr-current_query h3 { margin: 0; }
 
-/* line 353, ../sass/style/_blocks.scss */
+/* line 354, ../sass/style/_blocks.scss */
 .islandora-solr-search-result { color: #333333; }
-/* line 360, ../sass/style/_blocks.scss */
+/* line 361, ../sass/style/_blocks.scss */
+.islandora-solr-search-result .title { font-size: 15.75px; font-weight: 200; font-family: "Lora", "Open Sans", "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif; }
+/* line 366, ../sass/style/_blocks.scss */
 .islandora-solr-search-result .subTitle { font-style: italic; }
-/* line 363, ../sass/style/_blocks.scss */
+/* line 369, ../sass/style/_blocks.scss */
 .islandora-solr-search-result .date, .islandora-solr-search-result .author, .islandora-solr-search-result .type, .islandora-solr-search-result .filesize, .islandora-solr-search-result .language, .islandora-solr-search-result .filetype { display: inline-block; color: #787878; font-size: 12.25px; }
-/* line 368, ../sass/style/_blocks.scss */
+/* line 374, ../sass/style/_blocks.scss */
 .islandora-solr-search-result .date:after { content: ' - '; color: #787878; }
-/* line 373, ../sass/style/_blocks.scss */
+/* line 379, ../sass/style/_blocks.scss */
 .islandora-solr-search-result .type:after { content: ' - '; color: #787878; }
-/* line 377, ../sass/style/_blocks.scss */
+/* line 383, ../sass/style/_blocks.scss */
 .islandora-solr-search-result .author { display: inline; }
-/* line 380, ../sass/style/_blocks.scss */
+/* line 386, ../sass/style/_blocks.scss */
 .islandora-solr-search-result .author:after { white-space: pre; content: "\A"; }
-/* line 385, ../sass/style/_blocks.scss */
+/* line 391, ../sass/style/_blocks.scss */
 .islandora-solr-search-result .type-icon { margin: 0 14px -2px 14px; }
+/* line 395, ../sass/style/_blocks.scss */
+.islandora-solr-search-result .moreinfo { float: right; }
+/* line 396, ../sass/style/_blocks.scss */
+.islandora-solr-search-result .moreinfo a { padding: 5px 10px; background-color: #e37e31; color: white; font-decoration: none; font-weight: 300; margin: 1px solid #333; -webkit-transition-property: background-color; -moz-transition-property: background-color; transition-property: background-color; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; transition-duration: 0.5s; }
+/* line 406, ../sass/style/_blocks.scss */
+.islandora-solr-search-result .moreinfo a:hover { background-color: #333; color: white; text-decoration: none; }
 
-/* line 397, ../sass/style/_blocks.scss */
+/* line 424, ../sass/style/_blocks.scss */
 .region-sidebar-first { margin-top: 15px; border-right: 1px solid #ccc; }

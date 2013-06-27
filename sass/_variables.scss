@@ -1,6 +1,7 @@
 // Import base utilities which create no code unless used.
 @import 'aether.css/common/utilities';
 @import 'breakpoint';
+@import url(http://fonts.googleapis.com/css?family=Lora);
 
 // Legacy IE support
 $legacy-support-for-ie6: false;
@@ -37,11 +38,11 @@ $typographic-indent:           $font-size-xxl;
 
 // Font Stacks
 //$header-font-family:            Georgia,"Times New Roman",Times,serif;
-$header-font-family:           'Open Sans', "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;
+$header-font-family:           'Lora', 'Open Sans', "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;
 //$text-font-family:             Georgia,"Times New Roman",Times,serif;
 $text-font-family:             'Open Sans', "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;
-$button-font-family:           "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;
-$tab-font-family:              "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;
+$button-font-family:           'Lora', "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;
+$tab-font-family:              'Lora', "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;
 $input-font-family:            Arial, "Liberation Sans", FreeSans, sans-serif;
 $mono-font-family:             Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
 
