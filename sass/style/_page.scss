@@ -99,3 +99,11 @@
     background-color: $dark-grey;
     color: $background-grey;
 }
+
+// Title
+#content-header {
+    h1.title {
+        @include margin-leader(0.75, $font-size-xxl);
+        @include margin-trailer(0.25, $font-size-xxl);
+    }
+}

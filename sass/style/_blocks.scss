@@ -350,6 +350,9 @@ $unselected-menu: $dulled;
     }
 }
 
+#islandora-solr-result-count {
+    float: right;
+}
 
 .islandora-solr-search-result {
     color: $text-color;
@@ -424,4 +427,31 @@ $unselected-menu: $dulled;
 .region-sidebar-first {
     margin-top: 15px;
     border-right: 1px solid #ccc;
+    word-wrap: break-word;
+}
+
+
+// ISLANDORA SERIES DISPLAY
+.islandora-series-list-item {
+    .collection-value.volume {
+        font-size: $font-size-sm;
+        color: gray;
+    }
+    .collection-value.title {
+        font-size: $font-size-lg;
+        color: black;
+    }
+    .collection-value.details {
+        font-size: $font-size-md;
+        font-style: italic;
+    }
+    .collection-value.date {
+        font-size: $font-size-sm;
+        color: gray;
+    }
+}
+
+// BREADCRUMB OVERWRITE
+nav.breadcrumb {
+	display: none;
 }
