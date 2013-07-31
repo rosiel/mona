@@ -160,35 +160,35 @@ $unselected-menu: $dulled;
         }
         *.keyword-0{
             border-bottom-color: $climatechange;
-            a:hover {
+            a:hover, a.active {
                 background-color: $climatechange;
                 color: #333;
             }
         }
         *.keyword-1{
             border-bottom-color: $pollutants;
-            a:hover {
+            a:hover, a.active {
                 background-color: $pollutants;
                 color: #333;
             }
         }
         *.keyword-2{
             border-bottom-color: $ecosystems;
-            a:hover {
+            a:hover, a.active {
                 background-color: $ecosystems;
                 color: #333;
             }
         }
         *.keyword-3{
             border-bottom-color: $economy;
-            a:hover {
+            a:hover, a.active {
                 background-color: $economy;
                 color: #333;
             }
         }
         *.keyword-4{
             border-bottom-color: $enforcement;
-            a:hover {
+            a:hover, a.active {
                 background-color: $enforcement;
                 color: #333;
             }
@@ -229,7 +229,7 @@ $unselected-menu: $dulled;
 
 .navigation.g-all-row {
     background-color: #FFF;
-    padding-top: 15px;
+    //padding-top: 15px;
 }
 .navigation-inner {
     margin-bottom: 0;

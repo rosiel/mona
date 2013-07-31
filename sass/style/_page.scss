@@ -49,35 +49,17 @@
   .ie7 & {
     @include float(left);
   }
-  height: 140px;
 }
 
 .logo {
-  @include center-vertically;
-  height: 100px;
-  width: 150px;
-  img {
-      @include single-box-shadow(#111, 1px, 1px, 3px);
-      height: 100px;
-      background-color: white;
-      padding: 25px 5px 10px 5px;
-      //margin-left: 10px;
-      position: relative;
-      top: -25px;
-      border-left: black 10px solid;
-      border-right: black 10px solid;
-      border-bottom: black 10px solid;
-      //padding: 0 10px 0 0;
-  }
-  .ie7 & {
-      @include float(left);
-    }
 }
+    
 
+//Irrelevant since we don't show the title (in Mona config)
 .site-name {
   @include adjust-font-size-to($font-size-xxl,1);
   @include margin-leader(0);
-  @include margin-trailer(0.31, $font-size-xxl);
+  //@include margin-trailer(0.31, $font-size-xxl);
   font-family: $header-font-family;
   font-weight: bold;
   a {
@@ -90,8 +72,17 @@
   @include adjust-font-size-to($font-size-xl,1);
 }
 
+// Title
+#content-header {
+    h1.title {
+        @include margin-leader(0.75, $font-size-xxl);
+        @include margin-trailer(0.25, $font-size-xxl);
+    }
+}
+
 #page {
-    background: url(../images/texture6.jpg) repeat;
+    //FIXME background: url(../images/texture6.jpg) repeat;
+    background: #EEE;
 }
 
 // Footer 
@@ -100,10 +91,4 @@
     color: $background-grey;
 }
 
-// Title
-#content-header {
-    h1.title {
-        @include margin-leader(0.75, $font-size-xxl);
-        @include margin-trailer(0.25, $font-size-xxl);
-    }
-}
+

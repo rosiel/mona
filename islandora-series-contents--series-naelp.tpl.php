@@ -1,7 +1,7 @@
 
 <div>
   <?php foreach($series_docs as $key => $doc): ?>
-    <?php $series_docs[$key]['weight'] = $doc['date']; ?>
+    <?php $series_docs[$key]['weight'] = $doc['volume']; ?>
   <?php endforeach; ?>
   <?php uasort($series_docs, 'drupal_sort_weight'); ?>
   <?php $series_docs = array_reverse($series_docs); ?>
