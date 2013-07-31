@@ -2,6 +2,8 @@
 @import 'aether.css/common/utilities';
 @import 'breakpoint';
 @import url(http://fonts.googleapis.com/css?family=Lora);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
 
 // Legacy IE support
 $legacy-support-for-ie6: false;
@@ -38,11 +40,11 @@ $typographic-indent:           $font-size-xxl;
 
 // Font Stacks
 //$header-font-family:            Georgia,"Times New Roman",Times,serif;
-$header-font-family:           'Lora', 'Open Sans', "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;
+$header-font-family:           'PT Serif', 'Open Sans', "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;
 //$text-font-family:             Georgia,"Times New Roman",Times,serif;
 $text-font-family:             'Open Sans', "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;
-$button-font-family:           'Lora', "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;
-$tab-font-family:              'Lora', "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;
+$button-font-family:           'PT Serif', "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;
+$tab-font-family:              'PT Serif', "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;
 $input-font-family:            Arial, "Liberation Sans", FreeSans, sans-serif;
 $mono-font-family:             Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
 

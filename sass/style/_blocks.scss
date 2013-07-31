@@ -21,9 +21,6 @@
   @include margin-trailer(1);
 }
 
-#content {
-    background-color: #fff;
-}
 
 #footer .footer-inner {
   @include margin-leader(1);
@@ -100,7 +97,7 @@ $unselected-menu: $dulled;
 
 #block-system-main-menu {
   float: left;
-  padding-left: 150px;
+  //padding-left: 150px;
   margin-bottom: 0;
   ul {
     @include horizontal-list-container;
@@ -136,9 +133,7 @@ $unselected-menu: $dulled;
   }
 }
 
-#block-custom_solr_config-keyword_facets, 
-#block-custom_solr_config-keyword_facets_fr, 
-#block-custom_solr_config-keyword_facets_es {
+#block-custom_solr_config-keyword_facets {
     margin-bottom: 0;
     ul {
         li {
@@ -148,7 +143,7 @@ $unselected-menu: $dulled;
             padding: 0;
         }
         a {
-            color: #EEE;
+            color: $dark-grey;
             padding: 5px 17px 6px;
             font-weight: 300;
             letter-spacing: 0.1em;
@@ -228,17 +223,17 @@ $unselected-menu: $dulled;
 }
 
 .navigation.g-all-row {
-    background-color: #FFF;
+    //background-color: #FFF;
     //padding-top: 15px;
 }
 .navigation-inner {
     margin-bottom: 0;
     //margin-top: -20px;
-    float: right;
+    text-align: center;
 }
 
 .navigation-inner-wrapper {
-    background-color: $dark-grey;
+    //background-color: $dark-grey;
     //@include margin-trailer(1, $base-font-size);
 }
 
