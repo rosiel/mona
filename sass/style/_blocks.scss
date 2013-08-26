@@ -134,18 +134,22 @@ $unselected-menu: $dulled;
 }
 
 #block-custom_solr_config-keyword_facets {
+    vertical-align: middle;
     margin-bottom: 0;
+    font-weight: 300;
+    line-height: 0.6 * $base-line-height;
+
     ul {
         li {
             border: 0 0 -3px 0;
             border-bottom-style: solid;
             display: inline-block;
             padding: 0;
+            max-width: 16%;
         }
         a {
             color: $dark-grey;
-            padding: 5px 17px 6px;
-            font-weight: 300;
+            padding: 5px 17px 6px;//FIXME!!!
             letter-spacing: 0.1em;
             display: inline-block;
 
@@ -187,6 +191,11 @@ $unselected-menu: $dulled;
                 background-color: $enforcement;
                 color: #333;
             }
+        }
+        *.title{
+            border: none;
+            font-style: italic;
+            max-width: 10%;
         }
     }
 }
@@ -268,25 +277,28 @@ $unselected-menu: $dulled;
     //@include box-shadow(#333 2px 2px 5px);
     //background-color: $background-grey;
     .block-title, .content { 
-        padding: $borderwidth/2 $borderwidth;
+        padding: $base-line-height/4 $borderwidth; 
     }
+    color: $text-color-light;
     .block-title {
-        background-color: $dark-grey;
+        background-color: $light-grey;
         //outline: 1px solid $dark-grey;
         margin: 0 15px 0 0;
-        color: #ccc;
-        font-size: $font-size-normal;
+        color: $dark-grey;
+        font-weight: bold;
+        font-size: $font-size-lg;
         font-weight: 400;
     }
     h3 {
         margin: 0;
         font-size: $font-size-normal;
-        line-height: $font-size-normal * 1.5;
-        color: #333;
+        line-height: 0.8 * $base-line-height;
+        padding-bottom: 0.2 * $base-line-height;
+        //color: #333;
         font-weight: 600;
-        border-top: 1px solid #ccc;
-        margin-top: $font-size-normal/2;
-        padding-top: $font-size-normal/2;
+        //<D-x>border-top: 1px solid #ccc;
+        //margin-top: $font-size-normal/2;
+        //padding-top: $font-size-normal/2;
         font-family: $text-font-family;
     }
     .islandora-solr-facet-wrapper:first-child {
@@ -306,7 +318,10 @@ $unselected-menu: $dulled;
         list-style-type: none;
     }
     li {
-        line-height: $font-size-normal * 1.5;
+        //line-height: $font-size-normal * 1.5;
+
+        line-height: 0.8 * $base-line-height;
+        padding-bottom: 0.2 * $base-line-height;
         a {
         color: #333;
         }
@@ -328,6 +343,8 @@ $unselected-menu: $dulled;
     }
     a.soft-limit {
         padding-left: 1em; // to match ul above
+        font-style: italic;
+        padding-bottom: 0.2 * $base-line-height;
     }
 }
 
@@ -350,6 +367,8 @@ $unselected-menu: $dulled;
 }
 
 .islandora-solr-search-result {
+    margin-bottom: $base-line-height;
+    padding-top: $base-line-height - 2px;
     color: $text-color;
 //    .type {
 //        font-style: italic;
@@ -357,12 +376,14 @@ $unselected-menu: $dulled;
 //        font-size: $font-size-md;
 //    }
     .title {
-        font-size: $font-size-lg;
-        font-weight: 200;
+        font-size: $font-size-h2;
         font-family: $header-font-family;
+        font-weight: bold;
     }
     .subTitle {
-        font-style: italic;
+        font-weight: bold;
+        font-family: $header-font-family;
+        line-height: 2/3 * $base-line-height;
     }
     .date, .author, .type, .filesize, .language, .filetype {
         display: inline-block;
@@ -389,15 +410,17 @@ $unselected-menu: $dulled;
     .type-icon {
         margin: 0 $base-font-size -2px $base-font-size;
     }
+}
 
-    .moreinfo {
+.islandora-multilingual-sidebar, .islandora-solr-search-result {
+    .availability {
         a {
-            padding: 5px 10px;
+            padding: 4px 10px;
             background-color: $ecosystems;
             color: white;
             font-decoration: none;
             font-weight: 300;
-            margin: 1px solid #333;
+            //margin: 1px solid #333;
             @include transition-property(background-color);
             @include transition-duration(0.5s);
         }
@@ -407,7 +430,16 @@ $unselected-menu: $dulled;
             text-decoration: none;
         }
 
-        float: right;
+        //float: right;
+        display: block;
+    }
+    ul li {
+        margin-left: 0;
+    }
+    .collections {
+        ul {
+            margin: 0;
+        }
     }
 
 }

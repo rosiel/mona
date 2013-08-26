@@ -40,9 +40,9 @@ $typographic-indent:           $font-size-xxl;
 
 // Font Stacks
 //$header-font-family:            Georgia,"Times New Roman",Times,serif;
-$header-font-family:           'PT Serif', 'Open Sans', "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;
+$header-font-family:           'Lora', 'PT Serif', 'Open Sans', "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;
 //$text-font-family:             Georgia,"Times New Roman",Times,serif;
-$text-font-family:             'Open Sans', "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;
+$text-font-family:             'Droid Sans', 'Open Sans', "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;
 $button-font-family:           'PT Serif', "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;
 $tab-font-family:              'PT Serif', "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif;
 $input-font-family:            Arial, "Liberation Sans", FreeSans, sans-serif;
@@ -127,7 +127,7 @@ $aether-grid-width-handheld:          308px; // http://gridcalculator.dk/#/308/1
 // Used by aether-grids to create a grid debugging overlay.
 $aether-show-grid-background:         false;
 $show-column-grid-backgrounds:        true;
-$show-baseline-grid-backgrounds:      false;
+$show-baseline-grid-backgrounds:      true;
 $grid-background-baseline-color:      hsl(0, 0%, 87%);
 
 // Vertical Rhythm
@@ -191,3 +191,4 @@ $borderwidth:       15px;
 $background-grey:   #efefef;
 $dark-grey:         #333;
 $almost-dark-grey:  #555;
+$light-grey:        #919191;
