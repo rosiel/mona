@@ -798,7 +798,10 @@ p.unpublished { height: 0; overflow: visible; color: #d8d8d8; font-size: 75px; l
 /* line 81, ../sass/style/_page.scss */
 #page { background: #EEE; }
 
-/* line 87, ../sass/style/_page.scss */
+/* line 86, ../sass/style/_page.scss */
+html { background-color: #efefef; }
+
+/* line 91, ../sass/style/_page.scss */
 #footer { background-color: #333333; color: #efefef; }
 
 /* Themed Buttons */
@@ -1070,3 +1073,6 @@ ul.languages { list-style-type: disc; padding: 0; margin: 0; }
 
 /* line 11, ../sass/style/_islandora.scss */
 .languages li { margin-left: 10px; display: inline; }
+
+/* line 1, ../sass/style/_forms.scss */
+fieldset { margin: 0; }
