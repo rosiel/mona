@@ -9,11 +9,18 @@
 }
 
 #edit-islandora-simple-search-query.form-text {
-    font-size: 14px;
-    background-color: #555;
+    font-size: 12px;
+    background-color: #777;
+    background: #777;
     @include box-shadow(black 0 0 0);
     border-style: none;
-    @include border-radius(0);
+    @include border-radius(0px);
     //height: 31px;
-	color: white;
+	color: black;
+
+}
+
+
+.form-select {
+    padding-right: 18px;
 }

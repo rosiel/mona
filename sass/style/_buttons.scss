@@ -3,4 +3,5 @@
 .form-submit[type="submit"] {
   @extend %btn;
   @include aether-button-gradient($style: "shiny", $base-color: $button-color-2, $second-color: false, $text-color: #222, $text-style: "inset", $auto-states: true);
+  margin-bottom: 0;
 }

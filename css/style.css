@@ -803,7 +803,7 @@ p.unpublished { height: 0; overflow: visible; color: #d8d8d8; font-size: 75px; l
 
 /* Themed Buttons */
 /* line 3, ../sass/style/_buttons.scss */
-.form-submit[type="submit"] { *zoom: 1; filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF0F0F0', endColorstr='#FFBDBDBD'); background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(50%, #f0f0f0), color-stop(100%, #d6d6d6)); background: -webkit-linear-gradient(#ffffff, #f0f0f0 50%, #d6d6d6); background: -moz-linear-gradient(#ffffff, #f0f0f0 50%, #d6d6d6); background: linear-gradient(#ffffff, #f0f0f0 50%, #d6d6d6); -webkit-box-shadow: white 0 1px 0 inset; -moz-box-shadow: white 0 1px 0 inset; box-shadow: white 0 1px 0 inset; border: 1px solid #c9c9c9; color: #222222; text-shadow: white 0 1px 0; }
+.form-submit[type="submit"] { *zoom: 1; filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF0F0F0', endColorstr='#FFBDBDBD'); background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(50%, #f0f0f0), color-stop(100%, #d6d6d6)); background: -webkit-linear-gradient(#ffffff, #f0f0f0 50%, #d6d6d6); background: -moz-linear-gradient(#ffffff, #f0f0f0 50%, #d6d6d6); background: linear-gradient(#ffffff, #f0f0f0 50%, #d6d6d6); -webkit-box-shadow: white 0 1px 0 inset; -moz-box-shadow: white 0 1px 0 inset; box-shadow: white 0 1px 0 inset; border: 1px solid #c9c9c9; color: #222222; text-shadow: white 0 1px 0; margin-bottom: 0; }
 /* line 14, ../sass-extensions/aether-components/stylesheets/aether-components/buttons/_pseudo-states.scss */
 .form-submit[type="submit"]:hover { text-decoration: none; }
 /* line 27, ../sass-extensions/aether-components/stylesheets/aether-components/buttons/_pseudo-states.scss */
@@ -832,7 +832,10 @@ p.unpublished { height: 0; overflow: visible; color: #d8d8d8; font-size: 75px; l
 .form-select::-moz-focus-inner, .form-textarea::-moz-focus-inner, .form-text::-moz-focus-inner, .password::-moz-focus-inner, .email::-moz-focus-inner { padding: 0 !important; margin: -1px !important; }
 
 /* line 11, ../sass/style/_fields.scss */
-#edit-islandora-simple-search-query.form-text { font-size: 14px; background-color: #555; -webkit-box-shadow: black 0 0 0; -moz-box-shadow: black 0 0 0; box-shadow: black 0 0 0; border-style: none; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; border-radius: 0; color: white; }
+#edit-islandora-simple-search-query.form-text { font-size: 12px; background-color: #777; background: #777; -webkit-box-shadow: black 0 0 0; -moz-box-shadow: black 0 0 0; box-shadow: black 0 0 0; border-style: none; -webkit-border-radius: 0px; -moz-border-radius: 0px; -ms-border-radius: 0px; border-radius: 0px; color: black; }
+
+/* line 24, ../sass/style/_fields.scss */
+.form-select { padding-right: 18px; }
 
 /* Links */
 /* line 3, ../sass/style/_links.scss */
@@ -865,50 +868,43 @@ a.active { color: #211b1b; }
 .user { font-size: 10.5px; }
 
 /* line 43, ../sass/style/_blocks.scss */
-#block-locale-language { float: left; margin-bottom: 0; padding-bottom: 0; padding-left: 10px; }
-/* line 48, ../sass/style/_blocks.scss */
-#block-locale-language ul { margin: 0.4em; padding: 0; list-style-type: none; }
+#block-locale-language, #block-system-user-menu, #block-system-main-menu, #block-menu-menu-bonus-menu { float: left; margin-bottom: 0; }
+/* line 46, ../sass/style/_blocks.scss */
+#block-locale-language ul, #block-system-user-menu ul, #block-system-main-menu ul, #block-menu-menu-bonus-menu ul { margin: 0.4em; padding: 0; list-style-type: none; list-style-type: none; }
 /* line 5, ../../../../../../../../../Users/rosie/.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
-#block-locale-language ul, #block-locale-language ul li { margin: 0px; padding: 0px; display: inline; }
+#block-locale-language ul, #block-locale-language ul li, #block-system-user-menu ul, #block-system-user-menu ul li, #block-system-main-menu ul, #block-system-main-menu ul li, #block-menu-menu-bonus-menu ul, #block-menu-menu-bonus-menu ul li { margin: 0px; padding: 0px; display: inline; }
+/* line 51, ../sass/style/_blocks.scss */
+#block-locale-language ul li, #block-system-user-menu ul li, #block-system-main-menu ul li, #block-menu-menu-bonus-menu ul li { padding-left: 0.5em; }
 /* line 53, ../sass/style/_blocks.scss */
-#block-locale-language ul li { padding-left: 0.5em; }
-/* line 56, ../sass/style/_blocks.scss */
-#block-locale-language li a { color: #aaaaaa; text-decoration: none; }
-/* line 60, ../sass/style/_blocks.scss */
-#block-locale-language a.language-link.session-active { color: #cccccc; text-decoration: underline; }
+#block-locale-language ul li a, #block-system-user-menu ul li a, #block-system-main-menu ul li a, #block-menu-menu-bonus-menu ul li a { color: #aaaaaa; text-decoration: none; }
+/* line 57, ../sass/style/_blocks.scss */
+#block-locale-language ul li a:hover, #block-system-user-menu ul li a:hover, #block-system-main-menu ul li a:hover, #block-menu-menu-bonus-menu ul li a:hover { text-decoration: underline; }
+
 /* line 64, ../sass/style/_blocks.scss */
-#block-locale-language a:hover { text-decoration: underline; }
+#block-menu-menu-bonus-menu { float: right; }
+
 /* line 67, ../sass/style/_blocks.scss */
+#block-islandora_solr-simple { float: right; }
+
+/* line 70, ../sass/style/_blocks.scss */
+#block-locale-language { padding-bottom: 0; padding-left: 10px; }
+/* line 73, ../sass/style/_blocks.scss */
+#block-locale-language a.language-link.session-active { color: #cccccc; text-decoration: underline; }
+/* line 77, ../sass/style/_blocks.scss */
 #block-locale-language li:after { color: #aaaaaa; }
 
-/* line 76, ../sass/style/_blocks.scss */
-#block-system-user-menu { float: left; margin-bottom: 0; margin-right: 10px; }
-/* line 80, ../sass/style/_blocks.scss */
-#block-system-user-menu ul { margin: 0; padding: 0; border: 0; margin: 0.4em; list-style-type: none; }
-/* line 20, ../sass-extensions/aether-grids/stylesheets/_aether-grids.scss */
-#block-system-user-menu ul:before, #block-system-user-menu ul:after { content: " "; display: table; }
-/* line 24, ../sass-extensions/aether-grids/stylesheets/_aether-grids.scss */
-#block-system-user-menu ul:after { clear: both; }
-/* line 84, ../sass/style/_blocks.scss */
-#block-system-user-menu ul li { list-style-image: none; list-style-type: none; margin-left: 0; white-space: nowrap; display: inline; float: left; padding-left: 1em; padding-right: 1em; }
-/* line 48, ../../../../../../../../../Users/rosie/.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-#block-system-user-menu ul li:first-child, #block-system-user-menu ul li.first { padding-left: 0; }
-/* line 49, ../../../../../../../../../Users/rosie/.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-#block-system-user-menu ul li:last-child { padding-right: 0; }
-/* line 50, ../../../../../../../../../Users/rosie/.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-#block-system-user-menu ul li.last { padding-right: 0; }
 /* line 86, ../sass/style/_blocks.scss */
-#block-system-user-menu ul li a { color: #aaaaaa; }
+#block-system-user-menu { margin-right: 10px; }
 
-/* line 98, ../sass/style/_blocks.scss */
+/* line 94, ../sass/style/_blocks.scss */
 #block-system-main-menu { float: left; margin-bottom: 0; }
-/* line 102, ../sass/style/_blocks.scss */
+/* line 98, ../sass/style/_blocks.scss */
 #block-system-main-menu ul { margin: 0; padding: 0; border: 0; list-style-type: none; }
 /* line 20, ../sass-extensions/aether-grids/stylesheets/_aether-grids.scss */
 #block-system-main-menu ul:before, #block-system-main-menu ul:after { content: " "; display: table; }
 /* line 24, ../sass-extensions/aether-grids/stylesheets/_aether-grids.scss */
 #block-system-main-menu ul:after { clear: both; }
-/* line 106, ../sass/style/_blocks.scss */
+/* line 101, ../sass/style/_blocks.scss */
 #block-system-main-menu ul li { list-style-image: none; list-style-type: none; margin-left: 0; white-space: nowrap; display: inline; float: left; padding-left: 1em; padding-right: 1em; }
 /* line 48, ../../../../../../../../../Users/rosie/.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 #block-system-main-menu ul li:first-child, #block-system-main-menu ul li.first { padding-left: 0; }
@@ -916,17 +912,17 @@ a.active { color: #211b1b; }
 #block-system-main-menu ul li:last-child { padding-right: 0; }
 /* line 50, ../../../../../../../../../Users/rosie/.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 #block-system-main-menu ul li.last { padding-right: 0; }
-/* line 108, ../sass/style/_blocks.scss */
+/* line 103, ../sass/style/_blocks.scss */
 #block-system-main-menu ul li a { color: #aaaaaa; }
 
-/* line 117, ../sass/style/_blocks.scss */
-#block-islandora_solr-simple { color: black; margin: 0; }
-/* line 120, ../sass/style/_blocks.scss */
-#block-islandora_solr-simple form { margin-bottom: 0; margin-left: auto; margin-right: auto; width: 90%; text-align: right; }
-/* line 128, ../sass/style/_blocks.scss */
-#block-islandora_solr-simple #edit-islandora-simple-search-query { width: 60%; }
-/* line 131, ../sass/style/_blocks.scss */
-#block-islandora_solr-simple a { padding-left: 1em; }
+/* line 112, ../sass/style/_blocks.scss */
+#block-islandora_solr-simple { color: black; margin: 0; width: 150px; }
+/* line 115, ../sass/style/_blocks.scss */
+#block-islandora_solr-simple form { margin-bottom: 0; margin-left: auto; margin-right: auto; text-align: right; }
+/* line 123, ../sass/style/_blocks.scss */
+#block-islandora_solr-simple #edit-islandora-simple-search-query { display: inline; }
+/* line 126, ../sass/style/_blocks.scss */
+#block-islandora_solr-simple #edit-submit { display: inline; width: 20px; }
 
 /* line 136, ../sass/style/_blocks.scss */
 #block-custom_solr_config-keyword_facets { vertical-align: middle; margin-bottom: 0; font-weight: 300; line-height: 14.4px; }
@@ -1040,11 +1036,11 @@ a.active { color: #211b1b; }
 .islandora-solr-search-result .type-icon { margin: 0 14px -2px 14px; }
 
 /* line 416, ../sass/style/_blocks.scss */
-.islandora-multilingual-sidebar .availability, .islandora-solr-search-result .availability { display: block; }
+.islandora-multilingual-sidebar .languages, .islandora-solr-search-result .languages { display: block; }
 /* line 417, ../sass/style/_blocks.scss */
-.islandora-multilingual-sidebar .availability a, .islandora-solr-search-result .availability a { padding: 4px 10px; background-color: #e37e31; color: white; font-decoration: none; font-weight: 300; -webkit-transition-property: background-color; -moz-transition-property: background-color; transition-property: background-color; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; transition-duration: 0.5s; }
+.islandora-multilingual-sidebar .languages a, .islandora-solr-search-result .languages a { padding: 4px 10px; background-color: #e37e31; color: white; font-decoration: none; font-weight: 300; -webkit-transition-property: background-color; -moz-transition-property: background-color; transition-property: background-color; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; transition-duration: 0.5s; }
 /* line 427, ../sass/style/_blocks.scss */
-.islandora-multilingual-sidebar .availability a:hover, .islandora-solr-search-result .availability a:hover { background-color: #333; color: white; text-decoration: none; }
+.islandora-multilingual-sidebar .languages a:hover, .islandora-solr-search-result .languages a:hover { background-color: #333; color: white; text-decoration: none; }
 /* line 436, ../sass/style/_blocks.scss */
 .islandora-multilingual-sidebar ul li, .islandora-solr-search-result ul li { margin-left: 0; }
 /* line 440, ../sass/style/_blocks.scss */
@@ -1064,3 +1060,10 @@ a.active { color: #211b1b; }
 
 /* line 482, ../sass/style/_blocks.scss */
 nav.breadcrumb { display: none; }
+
+/* Islandora common theme */
+/* line 5, ../sass/style/_islandora.scss */
+ul.languages { list-style-type: disc; padding: 0; margin: 0; }
+
+/* line 11, ../sass/style/_islandora.scss */
+.languages li { margin-left: 10px; display: inline; }
