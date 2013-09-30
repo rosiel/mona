@@ -389,21 +389,24 @@ $unselected-menu: $dulled;
         margin: 0 $base-font-size -2px $base-font-size;
     }
     
-    .abstract {
+    .availability-abstract {
         color: $text-color-light;
         font-size: $font-size-md;
         margin-top: $base-line-height/4;
-        .languages a{
-            background-color: $light-grey;
-        }
     }
 }
 
 .islandora-multilingual-sidebar, .islandora-solr-search-result {
+    .availability .languages a {
+       background-color: $ecosystems;
+    }
+    .availability-abstract .languages a {
+        background-color: $light-grey;
+    }
+
     .languages {
         a {
             padding: 4px 10px;
-            background-color: $ecosystems;
             color: white;
             font-decoration: none;
             font-weight: 300;
