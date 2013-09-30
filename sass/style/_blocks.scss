@@ -393,6 +393,9 @@ $unselected-menu: $dulled;
         color: $text-color-light;
         font-size: $font-size-md;
         margin-top: $base-line-height/4;
+        .languages a{
+            background-color: $light-grey;
+        }
     }
 }
 
@@ -407,6 +410,7 @@ $unselected-menu: $dulled;
             //margin: 1px solid #333;
             @include transition-property(background-color);
             @include transition-duration(0.5s);
+            font-size: $font-size-normal;
         }
         a:hover {
             background-color: #333;
