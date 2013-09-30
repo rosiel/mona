@@ -203,8 +203,9 @@ $unselected-menu: $dulled;
 
 
 .user-columns-wrapper {
+    background-color: #333;
     .user {
-        background-color: #333;
+        background-color: inherit;
     }
 }
 
@@ -386,6 +387,12 @@ $unselected-menu: $dulled;
 
     .type-icon {
         margin: 0 $base-font-size -2px $base-font-size;
+    }
+    
+    .abstract {
+        color: $text-color-light;
+        font-size: $font-size-md;
+        margin-top: $base-line-height/4;
     }
 }
 

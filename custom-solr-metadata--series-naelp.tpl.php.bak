@@ -1,4 +1,10 @@
 <?php
+/** 
+ * DISABLED because we no longer call the theme function directly from the series objects.
+ * so it wouldn't be called anyway. Removed for posterity and to remove confusion.
+ *
+ */
+
 /**
  * @file islandora-solr-grid.tpl.php
  * Islandora solr primary results template file for
