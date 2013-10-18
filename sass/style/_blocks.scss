@@ -387,28 +387,21 @@ $unselected-menu: $dulled;
         font-family: $header-font-family;
         line-height: 2/3 * $base-line-height;
     }
-    .date, .author, .type, .filesize, .language, .filetype {
+    .details, .filesize, .language, .filetype {
         display: inline-block;
         color: $text-color-light;
         font-size: $font-size-md;
     }
-    .date:after {
-        content: ' - ';
-        color: $text-color-light;
-        //display: inline;
+    .record, .direct {
+        display: inline-block;
+        padding-left: $base-line-height;
+        padding-top: $base-line-height/2;
+        a {
+            text-decoration: underline;
+            color: black;
+            font-weight: 300;
+        }
     }
-    .type:after {
-        content: ' - ';
-        color: $text-color-light;
-    }
-    .author {
-        display: inline;
-    }
-    .author:after{
-        white-space: pre;
-        content: "\A";
-    }
-
     .type-icon {
         margin: 0 $base-font-size -2px $base-font-size;
     }
