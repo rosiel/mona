@@ -1039,30 +1039,32 @@ a.active { color: #211b1b; }
 .islandora-solr-search-result .record, .islandora-solr-search-result .direct { display: inline-block; padding-left: 24px; padding-top: 12px; }
 /* line 399, ../sass/style/_blocks.scss */
 .islandora-solr-search-result .record a, .islandora-solr-search-result .direct a { text-decoration: underline; color: black; font-weight: 300; }
-/* line 406, ../sass/style/_blocks.scss */
+/* line 405, ../sass/style/_blocks.scss */
+.islandora-solr-search-result .direct::after { content: url("../images/new-window.png"); }
+/* line 408, ../sass/style/_blocks.scss */
 .islandora-solr-search-result .type-icon { margin: 0 14px -2px 14px; }
 
-/* line 412, ../sass/style/_blocks.scss */
+/* line 414, ../sass/style/_blocks.scss */
 .islandora-multilingual-sidebar .languages, .islandora-solr-search-result .languages { display: block; }
-/* line 413, ../sass/style/_blocks.scss */
+/* line 415, ../sass/style/_blocks.scss */
 .islandora-multilingual-sidebar .languages a, .islandora-solr-search-result .languages a { padding: 4px 10px; background-color: #e37e31; color: white; font-decoration: none; font-weight: 300; -webkit-transition-property: background-color; -moz-transition-property: background-color; transition-property: background-color; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; transition-duration: 0.5s; }
-/* line 423, ../sass/style/_blocks.scss */
+/* line 425, ../sass/style/_blocks.scss */
 .islandora-multilingual-sidebar .languages a:hover, .islandora-solr-search-result .languages a:hover { background-color: #333; color: white; text-decoration: none; }
-/* line 432, ../sass/style/_blocks.scss */
+/* line 434, ../sass/style/_blocks.scss */
 .islandora-multilingual-sidebar ul li, .islandora-solr-search-result ul li { margin-left: 0; }
-/* line 436, ../sass/style/_blocks.scss */
+/* line 438, ../sass/style/_blocks.scss */
 .islandora-multilingual-sidebar .collections ul, .islandora-solr-search-result .collections ul { margin: 0; }
 
-/* line 447, ../sass/style/_blocks.scss */
+/* line 449, ../sass/style/_blocks.scss */
 .islandora-series-list-item .collection-value.volume { font-size: 10.5px; color: gray; }
-/* line 451, ../sass/style/_blocks.scss */
+/* line 453, ../sass/style/_blocks.scss */
 .islandora-series-list-item .collection-value.title { font-size: 15.75px; color: black; }
-/* line 455, ../sass/style/_blocks.scss */
+/* line 457, ../sass/style/_blocks.scss */
 .islandora-series-list-item .collection-value.details { font-size: 12.25px; font-style: italic; }
-/* line 459, ../sass/style/_blocks.scss */
+/* line 461, ../sass/style/_blocks.scss */
 .islandora-series-list-item .collection-value.date { font-size: 10.5px; color: gray; }
 
-/* line 466, ../sass/style/_blocks.scss */
+/* line 468, ../sass/style/_blocks.scss */
 nav.breadcrumb { display: none; }
 
 /* Islandora common theme */

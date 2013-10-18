@@ -402,6 +402,9 @@ $unselected-menu: $dulled;
             font-weight: 300;
         }
     }
+    .direct::after {
+        content: url('../images/new-window.png');
+    }
     .type-icon {
         margin: 0 $base-font-size -2px $base-font-size;
     }
