@@ -30,6 +30,10 @@
     //background-color: $dark-grey;
 }
 
+.branding-wrapper {
+    background-color: $gbgreen;
+}
+
 $bright: #CCC;
 $dulled: #AAA;
 
@@ -40,29 +44,39 @@ $unselected-menu: $dulled;
     font-size: $font-size-sm;
 }
 
+#block-locale-language, #block-system-user-menu, #block-system-main-menu, #block-menu-menu-bonus-menu {
+    float: left;
+    margin-bottom: 0;
+    ul {
+        margin: 0.4em;
+        padding: 0;
+        list-style-type: none;
+        @include inline-list;
+        li {
+            padding-left: 0.5em;
+            a {
+                color: $dulled;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+#block-menu-menu-bonus-menu {
+    float: right;
+}
+#block-islandora_solr-simple {
+    float: right;
+}
 #block-locale-language {
-  float: left;
-  margin-bottom: 0;
   padding-bottom: 0;
   padding-left: 10px;
-  ul {
-    margin: 0.4em;
-    padding: 0;
-    @include inline-list;
-  }
-  ul li {
-      padding-left: 0.5em;
-  }
-  li a{
-    color: $unselected-menu;
-    text-decoration: none;
-  }
   a.language-link.session-active {
     color: $selected-menu;
     text-decoration: underline;
-  }
-  a:hover {
-      text-decoration: underline;
   }
   li:after {
       color: $unselected-menu;
@@ -74,21 +88,7 @@ $unselected-menu: $dulled;
 // Set it to appear in User Second block (right, top) AFTER Search.
 // And be visible only to logged in users.
 #block-system-user-menu {
-  float: left;
-  margin-bottom: 0;
   margin-right: 10px;
-  ul {
-    @include horizontal-list-container;
-    margin: 0.4em;
-    list-style-type: none;
-    li {
-      @include horizontal-list-item(1em, left);
-      a {
-        color: $dulled;
-	
-      }
-    }
-  }
 }
 
 // Main Menu contains only the CEC home link.
@@ -101,7 +101,6 @@ $unselected-menu: $dulled;
   margin-bottom: 0;
   ul {
     @include horizontal-list-container;
-    //margin: 0.4em;
     list-style-type: none;
     li {
       @include horizontal-list-item(1em, left);
@@ -229,6 +228,9 @@ $unselected-menu: $dulled;
 
 .user-columns-wrapper {
     background-color: #333;
+    .user {
+        background-color: inherit;
+    }
 }
 
 .navigation.g-all-row {
@@ -413,7 +415,7 @@ $unselected-menu: $dulled;
 }
 
 .islandora-multilingual-sidebar, .islandora-solr-search-result {
-    .availability {
+    .languages {
         a {
             padding: 4px 10px;
             background-color: $ecosystems;
@@ -444,18 +446,6 @@ $unselected-menu: $dulled;
 
 }
 
-
-// ISLANDORA OBJECT DISPLAY _ MOVE AWAY
-
-.islandora-multilingual-content {
-   // @include single-box-shadow(#333, 1px, 1px, 5px);
-}
-
-.region-sidebar-first {
-    margin-top: 15px;
-    border-right: 1px solid #ccc;
-    word-wrap: break-word;
-}
 
 
 // ISLANDORA SERIES DISPLAY

@@ -1,0 +1,80 @@
+/*
+ * Islandora common theme
+ */
+
+ul.languages {
+	list-style-type: disc;
+	padding: 0;
+	margin: 0;
+}
+
+.languages li {
+	margin-left: 10px;
+	display: inline;
+}
+
+// ISLANDORA OBJECT DISPLAY _ MOVE AWAY
+
+.islandora-multilingual-content {
+   // @include single-box-shadow(#333, 1px, 1px, 5px);
+}
+
+.region-sidebar-first {
+    margin-top: 15px;
+    border-right: 1px solid #ccc;
+    word-wrap: break-word;
+}
+
+.islandora-multilingual-metadata {
+    word-wrap: break-word;
+}
+
+// ISLANDORA OBJECT DISPLAY _ MOVE AWAY
+
+.islandora-multilingual-content {
+   // @include single-box-shadow(#333, 1px, 1px, 5px);
+}
+
+.region-sidebar-first {
+    margin-top: 15px;
+    border-right: 1px solid #ccc;
+    word-wrap: break-word;
+}
+
+.islandora-multilingual-sidebar {
+    .mods-title {
+        font-size: $font-size-h1;
+        line-height: $font-size-h1;
+        font-family: $header-font-family;
+        font-weight: bold;
+    }
+    .mods-subtitle {
+        font-size: $font-size-h2;
+        line-height: $font-size-h2;
+        font-family: $header-font-family;
+        font-weight: bold;
+    }
+    .mods-partname {
+        font-size: $font-size-h1;
+        font-family: $header-font-family;
+        font-weight: bold;
+    }
+    dd.mods-abstract {
+        padding-top: $base-line-height;
+        padding-bottom: $base-line-height;
+    }
+
+    .mods-link-context, .mods-link-raw {
+        a {
+            text-decoration: underline;
+        }
+    }
+    dd.mods-link-raw:after {
+        content: url('../images/pdficon_small.png');
+    }
+    dd.mods-link-context:after {
+        content: url('../images/new-window.png');
+    }
+
+}
+

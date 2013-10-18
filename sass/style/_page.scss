@@ -79,7 +79,7 @@
 }
 
 #page {
-    //FIXME background: url(../images/texture6.jpg) repeat;
+    //background: url(../images/concrete.png) repeat;
     background: #EEE;
 }
 
@@ -89,4 +89,12 @@
     color: $background-grey;
 }
 
+#logo img{
+    height: 150px;
+    width: 925px;
+}
+
+html {
+    background-color: #eee;
+}
 
