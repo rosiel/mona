@@ -870,50 +870,53 @@ a.active { color: #211b1b; }
 /* line 25, ../sass/style/_blocks.scss */
 #footer .footer-inner { margin-top: 1.71429em; }
 
-/* line 33, ../sass/style/_blocks.scss */
+/* line 29, ../sass/style/_blocks.scss */
+.region-branding { padding-top: 5px; }
+
+/* line 34, ../sass/style/_blocks.scss */
 .branding-wrapper { background-color: #85b858; }
 
-/* line 43, ../sass/style/_blocks.scss */
+/* line 44, ../sass/style/_blocks.scss */
 .user { font-size: 10.5px; }
 
-/* line 47, ../sass/style/_blocks.scss */
+/* line 48, ../sass/style/_blocks.scss */
 #block-locale-language, #block-system-user-menu, #block-system-main-menu, #block-menu-menu-bonus-menu { float: left; margin-bottom: 0; }
-/* line 50, ../sass/style/_blocks.scss */
+/* line 51, ../sass/style/_blocks.scss */
 #block-locale-language ul, #block-system-user-menu ul, #block-system-main-menu ul, #block-menu-menu-bonus-menu ul { margin: 0.4em; padding: 0; list-style-type: none; list-style-type: none; }
 /* line 5, ../../../../../../../../../Users/rosie/.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
 #block-locale-language ul, #block-locale-language ul li, #block-system-user-menu ul, #block-system-user-menu ul li, #block-system-main-menu ul, #block-system-main-menu ul li, #block-menu-menu-bonus-menu ul, #block-menu-menu-bonus-menu ul li { margin: 0px; padding: 0px; display: inline; }
-/* line 55, ../sass/style/_blocks.scss */
+/* line 56, ../sass/style/_blocks.scss */
 #block-locale-language ul li, #block-system-user-menu ul li, #block-system-main-menu ul li, #block-menu-menu-bonus-menu ul li { padding-left: 0.5em; }
-/* line 57, ../sass/style/_blocks.scss */
+/* line 58, ../sass/style/_blocks.scss */
 #block-locale-language ul li a, #block-system-user-menu ul li a, #block-system-main-menu ul li a, #block-menu-menu-bonus-menu ul li a { color: #aaaaaa; text-decoration: none; }
-/* line 61, ../sass/style/_blocks.scss */
+/* line 62, ../sass/style/_blocks.scss */
 #block-locale-language ul li a:hover, #block-system-user-menu ul li a:hover, #block-system-main-menu ul li a:hover, #block-menu-menu-bonus-menu ul li a:hover { text-decoration: underline; }
 
-/* line 68, ../sass/style/_blocks.scss */
+/* line 69, ../sass/style/_blocks.scss */
 #block-menu-menu-bonus-menu { float: right; }
 
-/* line 71, ../sass/style/_blocks.scss */
+/* line 72, ../sass/style/_blocks.scss */
 #block-islandora_solr-simple { float: right; }
 
-/* line 74, ../sass/style/_blocks.scss */
+/* line 75, ../sass/style/_blocks.scss */
 #block-locale-language { padding-bottom: 0; padding-left: 10px; }
-/* line 77, ../sass/style/_blocks.scss */
+/* line 78, ../sass/style/_blocks.scss */
 #block-locale-language a.language-link.session-active { color: #cccccc; text-decoration: underline; }
-/* line 81, ../sass/style/_blocks.scss */
+/* line 82, ../sass/style/_blocks.scss */
 #block-locale-language li:after { color: #aaaaaa; }
 
-/* line 90, ../sass/style/_blocks.scss */
+/* line 91, ../sass/style/_blocks.scss */
 #block-system-user-menu { margin-right: 10px; }
 
-/* line 98, ../sass/style/_blocks.scss */
+/* line 99, ../sass/style/_blocks.scss */
 #block-system-main-menu { float: left; margin-bottom: 0; }
-/* line 102, ../sass/style/_blocks.scss */
+/* line 103, ../sass/style/_blocks.scss */
 #block-system-main-menu ul { margin: 0; padding: 0; border: 0; list-style-type: none; }
 /* line 20, ../sass-extensions/aether-grids/stylesheets/_aether-grids.scss */
 #block-system-main-menu ul:before, #block-system-main-menu ul:after { content: " "; display: table; }
 /* line 24, ../sass-extensions/aether-grids/stylesheets/_aether-grids.scss */
 #block-system-main-menu ul:after { clear: both; }
-/* line 105, ../sass/style/_blocks.scss */
+/* line 106, ../sass/style/_blocks.scss */
 #block-system-main-menu ul li { list-style-image: none; list-style-type: none; margin-left: 0; white-space: nowrap; display: inline; float: left; padding-left: 1em; padding-right: 1em; }
 /* line 48, ../../../../../../../../../Users/rosie/.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 #block-system-main-menu ul li:first-child, #block-system-main-menu ul li.first { padding-left: 0; }
@@ -921,150 +924,150 @@ a.active { color: #211b1b; }
 #block-system-main-menu ul li:last-child { padding-right: 0; }
 /* line 50, ../../../../../../../../../Users/rosie/.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 #block-system-main-menu ul li.last { padding-right: 0; }
-/* line 107, ../sass/style/_blocks.scss */
+/* line 108, ../sass/style/_blocks.scss */
 #block-system-main-menu ul li a { color: #aaaaaa; }
 
-/* line 116, ../sass/style/_blocks.scss */
+/* line 117, ../sass/style/_blocks.scss */
 #block-islandora_solr-simple { color: black; margin: 0; }
-/* line 119, ../sass/style/_blocks.scss */
+/* line 120, ../sass/style/_blocks.scss */
 #block-islandora_solr-simple form { margin-bottom: 0; margin-left: auto; margin-right: auto; width: 90%; text-align: right; }
-/* line 127, ../sass/style/_blocks.scss */
+/* line 128, ../sass/style/_blocks.scss */
 #block-islandora_solr-simple #edit-islandora-simple-search-query { width: 60%; }
-/* line 130, ../sass/style/_blocks.scss */
+/* line 131, ../sass/style/_blocks.scss */
 #block-islandora_solr-simple a { padding-left: 1em; }
 
-/* line 135, ../sass/style/_blocks.scss */
-#block-custom_solr_config-keyword_facets { vertical-align: middle; margin-bottom: 0; font-weight: 300; line-height: 14.4px; }
-/* line 142, ../sass/style/_blocks.scss */
+/* line 136, ../sass/style/_blocks.scss */
+#block-custom_solr_config-keyword_facets { vertical-align: middle; margin-bottom: 24px; font-weight: 300; line-height: 14.4px; }
+/* line 143, ../sass/style/_blocks.scss */
 #block-custom_solr_config-keyword_facets ul li { border: 0 0 -3px 0; border-bottom-style: solid; display: inline-block; padding: 0; max-width: 16%; }
-/* line 149, ../sass/style/_blocks.scss */
+/* line 150, ../sass/style/_blocks.scss */
 #block-custom_solr_config-keyword_facets ul a { color: #333333; padding: 5px 17px 6px; letter-spacing: 0.1em; display: inline-block; }
-/* line 156, ../sass/style/_blocks.scss */
+/* line 157, ../sass/style/_blocks.scss */
 #block-custom_solr_config-keyword_facets ul a:hover { text-decoration: none; }
-/* line 159, ../sass/style/_blocks.scss */
+/* line 160, ../sass/style/_blocks.scss */
 #block-custom_solr_config-keyword_facets ul *.keyword-0 { border-bottom-color: #bce32b; }
-/* line 161, ../sass/style/_blocks.scss */
+/* line 162, ../sass/style/_blocks.scss */
 #block-custom_solr_config-keyword_facets ul *.keyword-0 a:hover, #block-custom_solr_config-keyword_facets ul *.keyword-0 a.active { background-color: #bce32b; color: #333; }
-/* line 166, ../sass/style/_blocks.scss */
+/* line 167, ../sass/style/_blocks.scss */
 #block-custom_solr_config-keyword_facets ul *.keyword-1 { border-bottom-color: #9fc3dc; }
-/* line 168, ../sass/style/_blocks.scss */
+/* line 169, ../sass/style/_blocks.scss */
 #block-custom_solr_config-keyword_facets ul *.keyword-1 a:hover, #block-custom_solr_config-keyword_facets ul *.keyword-1 a.active { background-color: #9fc3dc; color: #333; }
-/* line 173, ../sass/style/_blocks.scss */
+/* line 174, ../sass/style/_blocks.scss */
 #block-custom_solr_config-keyword_facets ul *.keyword-2 { border-bottom-color: #e37e31; }
-/* line 175, ../sass/style/_blocks.scss */
+/* line 176, ../sass/style/_blocks.scss */
 #block-custom_solr_config-keyword_facets ul *.keyword-2 a:hover, #block-custom_solr_config-keyword_facets ul *.keyword-2 a.active { background-color: #e37e31; color: #333; }
-/* line 180, ../sass/style/_blocks.scss */
+/* line 181, ../sass/style/_blocks.scss */
 #block-custom_solr_config-keyword_facets ul *.keyword-3 { border-bottom-color: #a29478; }
-/* line 182, ../sass/style/_blocks.scss */
+/* line 183, ../sass/style/_blocks.scss */
 #block-custom_solr_config-keyword_facets ul *.keyword-3 a:hover, #block-custom_solr_config-keyword_facets ul *.keyword-3 a.active { background-color: #a29478; color: #333; }
-/* line 187, ../sass/style/_blocks.scss */
+/* line 188, ../sass/style/_blocks.scss */
 #block-custom_solr_config-keyword_facets ul *.keyword-4 { border-bottom-color: #e8e05d; }
-/* line 189, ../sass/style/_blocks.scss */
+/* line 190, ../sass/style/_blocks.scss */
 #block-custom_solr_config-keyword_facets ul *.keyword-4 a:hover, #block-custom_solr_config-keyword_facets ul *.keyword-4 a.active { background-color: #e8e05d; color: #333; }
-/* line 194, ../sass/style/_blocks.scss */
+/* line 195, ../sass/style/_blocks.scss */
 #block-custom_solr_config-keyword_facets ul *.title { border: none; font-style: italic; max-width: 10%; }
 
-/* line 202, ../sass/style/_blocks.scss */
+/* line 203, ../sass/style/_blocks.scss */
 .adf { background-color: #F5F5F5; }
-/* line 204, ../sass/style/_blocks.scss */
+/* line 205, ../sass/style/_blocks.scss */
 .adf h2 { background-color: #ECECEC; margin-top: 8px; margin-bottom: 5px; padding: 5px 0 3px 5px; color: #3E97B5; border-top: solid 1px #3e97b5; }
-/* line 212, ../sass/style/_blocks.scss */
+/* line 213, ../sass/style/_blocks.scss */
 .adf ul { list-style-type: none; }
-/* line 214, ../sass/style/_blocks.scss */
-.adf ul li { padding: 5px 10px; border-bottom: dotted 1px #3e97b5; }
 /* line 215, ../sass/style/_blocks.scss */
+.adf ul li { padding: 5px 10px; border-bottom: dotted 1px #3e97b5; }
+/* line 216, ../sass/style/_blocks.scss */
 .adf ul li a { color: black; font-weight: normal; }
-/* line 219, ../sass/style/_blocks.scss */
+/* line 220, ../sass/style/_blocks.scss */
 .adf ul li a:hover { color: #3e97b5; }
 
-/* line 229, ../sass/style/_blocks.scss */
+/* line 230, ../sass/style/_blocks.scss */
 .user-columns-wrapper { background-color: #333; }
-/* line 231, ../sass/style/_blocks.scss */
+/* line 232, ../sass/style/_blocks.scss */
 .user-columns-wrapper .user { background-color: inherit; }
 
-/* line 240, ../sass/style/_blocks.scss */
+/* line 241, ../sass/style/_blocks.scss */
 .navigation-inner { margin-bottom: 0; text-align: center; }
 
-/* line 256, ../sass/style/_blocks.scss */
+/* line 257, ../sass/style/_blocks.scss */
 #islandora-solr-simple-search-form { display: inline; margin: 0; padding: 0; }
 
-/* line 266, ../sass/style/_blocks.scss */
+/* line 267, ../sass/style/_blocks.scss */
 .islandora-solr-facet-wrapper:first-child h3 { margin-top: 0; border-top: none; padding-top: 0; }
 
-/* line 278, ../sass/style/_blocks.scss */
+/* line 279, ../sass/style/_blocks.scss */
 #block-islandora_solr-basic_facets, #block-islandora_solr-current_query, #block-islandora_solr-sort, #block-custom_solr_config-series_links, #block-custom_solr_config-external_links { color: #787878; font-size: 14px; }
-/* line 281, ../sass/style/_blocks.scss */
+/* line 282, ../sass/style/_blocks.scss */
 #block-islandora_solr-basic_facets .block-title, #block-islandora_solr-basic_facets .content, #block-islandora_solr-current_query .block-title, #block-islandora_solr-current_query .content, #block-islandora_solr-sort .block-title, #block-islandora_solr-sort .content, #block-custom_solr_config-series_links .block-title, #block-custom_solr_config-series_links .content, #block-custom_solr_config-external_links .block-title, #block-custom_solr_config-external_links .content { padding: 6px 15px; }
-/* line 285, ../sass/style/_blocks.scss */
+/* line 286, ../sass/style/_blocks.scss */
 #block-islandora_solr-basic_facets .block-title, #block-islandora_solr-current_query .block-title, #block-islandora_solr-sort .block-title, #block-custom_solr_config-series_links .block-title, #block-custom_solr_config-external_links .block-title { background-color: #919191; margin: 0 15px 0 0; color: #333333; font-weight: bold; font-size: 15.75px; font-weight: 400; }
-/* line 294, ../sass/style/_blocks.scss */
+/* line 295, ../sass/style/_blocks.scss */
 #block-islandora_solr-basic_facets h3, #block-islandora_solr-current_query h3, #block-islandora_solr-sort h3, #block-custom_solr_config-series_links h3, #block-custom_solr_config-external_links h3 { margin: 0; font-size: 14px; line-height: 19.2px; padding-bottom: 4.8px; font-weight: 600; font-family: "Droid Sans", "Open Sans", "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif; }
-/* line 307, ../sass/style/_blocks.scss */
+/* line 308, ../sass/style/_blocks.scss */
 #block-islandora_solr-basic_facets .islandora-solr-facet-wrapper:first-child h3, #block-islandora_solr-current_query .islandora-solr-facet-wrapper:first-child h3, #block-islandora_solr-sort .islandora-solr-facet-wrapper:first-child h3, #block-custom_solr_config-series_links .islandora-solr-facet-wrapper:first-child h3, #block-custom_solr_config-external_links .islandora-solr-facet-wrapper:first-child h3 { margin-top: 0; border-top: none; padding-top: 0; }
-/* line 315, ../sass/style/_blocks.scss */
+/* line 316, ../sass/style/_blocks.scss */
 #block-islandora_solr-basic_facets ul, #block-islandora_solr-current_query ul, #block-islandora_solr-sort ul, #block-custom_solr_config-series_links ul, #block-custom_solr_config-external_links ul { margin-top: 0; margin-bottom: 0; padding: 0 0 0 1em; list-style-type: none; }
-/* line 322, ../sass/style/_blocks.scss */
+/* line 323, ../sass/style/_blocks.scss */
 #block-islandora_solr-basic_facets li, #block-islandora_solr-current_query li, #block-islandora_solr-sort li, #block-custom_solr_config-series_links li, #block-custom_solr_config-external_links li { line-height: 19.2px; padding-bottom: 4.8px; }
-/* line 327, ../sass/style/_blocks.scss */
+/* line 328, ../sass/style/_blocks.scss */
 #block-islandora_solr-basic_facets li a, #block-islandora_solr-current_query li a, #block-islandora_solr-sort li a, #block-custom_solr_config-series_links li a, #block-custom_solr_config-external_links li a { color: #333; }
-/* line 330, ../sass/style/_blocks.scss */
+/* line 331, ../sass/style/_blocks.scss */
 #block-islandora_solr-basic_facets li a:hover, #block-islandora_solr-current_query li a:hover, #block-islandora_solr-sort li a:hover, #block-custom_solr_config-series_links li a:hover, #block-custom_solr_config-external_links li a:hover { color: #85b858; text-decoration: none; }
-/* line 336, ../sass/style/_blocks.scss */
+/* line 337, ../sass/style/_blocks.scss */
 #block-islandora_solr-basic_facets a, #block-islandora_solr-current_query a, #block-islandora_solr-sort a, #block-custom_solr_config-series_links a, #block-custom_solr_config-external_links a { font-weight: normal; }
-/* line 339, ../sass/style/_blocks.scss */
+/* line 340, ../sass/style/_blocks.scss */
 #block-islandora_solr-basic_facets .item-list ul li, #block-islandora_solr-current_query .item-list ul li, #block-islandora_solr-sort .item-list ul li, #block-custom_solr_config-series_links .item-list ul li, #block-custom_solr_config-external_links .item-list ul li { margin: 0; padding: 0; }
-/* line 343, ../sass/style/_blocks.scss */
+/* line 344, ../sass/style/_blocks.scss */
 #block-islandora_solr-basic_facets .plusminus, #block-islandora_solr-current_query .plusminus, #block-islandora_solr-sort .plusminus, #block-custom_solr_config-series_links .plusminus, #block-custom_solr_config-external_links .plusminus { display: none; }
-/* line 346, ../sass/style/_blocks.scss */
+/* line 347, ../sass/style/_blocks.scss */
 #block-islandora_solr-basic_facets a.soft-limit, #block-islandora_solr-current_query a.soft-limit, #block-islandora_solr-sort a.soft-limit, #block-custom_solr_config-series_links a.soft-limit, #block-custom_solr_config-external_links a.soft-limit { padding-left: 1em; font-style: italic; padding-bottom: 4.8px; }
 
-/* line 355, ../sass/style/_blocks.scss */
+/* line 356, ../sass/style/_blocks.scss */
 #block-custom_solr_config-series_links li, #block-custom_solr_config-external_links li { padding: 5px 0; border-bottom: 1px solid #ccc; }
 
-/* line 362, ../sass/style/_blocks.scss */
+/* line 363, ../sass/style/_blocks.scss */
 #block-islandora_solr-current_query h3 { margin: 0; }
 
-/* line 367, ../sass/style/_blocks.scss */
+/* line 368, ../sass/style/_blocks.scss */
 #islandora-solr-result-count { float: right; }
 
-/* line 371, ../sass/style/_blocks.scss */
+/* line 372, ../sass/style/_blocks.scss */
 .islandora-solr-search-result { margin-bottom: 24px; padding-top: 22px; color: #333333; }
-/* line 380, ../sass/style/_blocks.scss */
+/* line 381, ../sass/style/_blocks.scss */
 .islandora-solr-search-result .title { font-size: 19.25px; font-family: "Lora", "PT Serif", "Open Sans", "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif; font-weight: bold; }
-/* line 385, ../sass/style/_blocks.scss */
+/* line 386, ../sass/style/_blocks.scss */
 .islandora-solr-search-result .subTitle { font-weight: bold; font-family: "Lora", "PT Serif", "Open Sans", "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif; line-height: 16px; }
-/* line 390, ../sass/style/_blocks.scss */
+/* line 391, ../sass/style/_blocks.scss */
 .islandora-solr-search-result .details, .islandora-solr-search-result .filesize, .islandora-solr-search-result .language, .islandora-solr-search-result .filetype { display: inline-block; color: #787878; font-size: 12.25px; }
-/* line 395, ../sass/style/_blocks.scss */
+/* line 396, ../sass/style/_blocks.scss */
 .islandora-solr-search-result .record, .islandora-solr-search-result .direct { display: inline-block; padding-left: 24px; padding-top: 12px; }
-/* line 399, ../sass/style/_blocks.scss */
+/* line 400, ../sass/style/_blocks.scss */
 .islandora-solr-search-result .record a, .islandora-solr-search-result .direct a { text-decoration: underline; color: black; font-weight: 300; }
-/* line 405, ../sass/style/_blocks.scss */
+/* line 406, ../sass/style/_blocks.scss */
 .islandora-solr-search-result .direct::after { content: url("../images/new-window.png"); }
-/* line 408, ../sass/style/_blocks.scss */
+/* line 409, ../sass/style/_blocks.scss */
 .islandora-solr-search-result .type-icon { margin: 0 14px -2px 14px; }
 
-/* line 414, ../sass/style/_blocks.scss */
-.islandora-multilingual-sidebar .languages, .islandora-solr-search-result .languages { display: block; }
 /* line 415, ../sass/style/_blocks.scss */
+.islandora-multilingual-sidebar .languages, .islandora-solr-search-result .languages { display: block; }
+/* line 416, ../sass/style/_blocks.scss */
 .islandora-multilingual-sidebar .languages a, .islandora-solr-search-result .languages a { padding: 4px 10px; background-color: #85b858; color: white; font-decoration: none; font-weight: 300; -webkit-transition-property: background-color; -moz-transition-property: background-color; transition-property: background-color; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; transition-duration: 0.5s; }
-/* line 425, ../sass/style/_blocks.scss */
+/* line 426, ../sass/style/_blocks.scss */
 .islandora-multilingual-sidebar .languages a:hover, .islandora-solr-search-result .languages a:hover { background-color: #333; color: white; text-decoration: none; }
-/* line 434, ../sass/style/_blocks.scss */
+/* line 435, ../sass/style/_blocks.scss */
 .islandora-multilingual-sidebar ul li, .islandora-solr-search-result ul li { margin-left: 0; }
-/* line 438, ../sass/style/_blocks.scss */
+/* line 439, ../sass/style/_blocks.scss */
 .islandora-multilingual-sidebar .collections ul, .islandora-solr-search-result .collections ul { margin: 0; }
 
-/* line 449, ../sass/style/_blocks.scss */
+/* line 450, ../sass/style/_blocks.scss */
 .islandora-series-list-item .collection-value.volume { font-size: 10.5px; color: gray; }
-/* line 453, ../sass/style/_blocks.scss */
+/* line 454, ../sass/style/_blocks.scss */
 .islandora-series-list-item .collection-value.title { font-size: 15.75px; color: black; }
-/* line 457, ../sass/style/_blocks.scss */
+/* line 458, ../sass/style/_blocks.scss */
 .islandora-series-list-item .collection-value.details { font-size: 12.25px; font-style: italic; }
-/* line 461, ../sass/style/_blocks.scss */
+/* line 462, ../sass/style/_blocks.scss */
 .islandora-series-list-item .collection-value.date { font-size: 10.5px; color: gray; }
 
-/* line 468, ../sass/style/_blocks.scss */
+/* line 469, ../sass/style/_blocks.scss */
 nav.breadcrumb { display: none; }
 
 /* Islandora common theme */
