@@ -26,8 +26,11 @@
   @include margin-leader(1);
 }
 
+#header {
+    padding-bottom: $base-line-height;
+}
+
 .region-branding {
-    padding-top: 5px;
     //background-color: $dark-grey;
 }
 
